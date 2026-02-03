@@ -56,7 +56,7 @@ export default function Home() {
         <div className={classes.recentPosts}>
 
           <div className={classes.desktopView}>
-            <h3>Sign up to my newsletter</h3>
+          <h2 style={{paddingTop:"15px"}}>Sign up to my newsletter</h2>
             <p className={classes.mobileView}>Sign up for my newsletter and be the first to get book updates, writing tips, exclusive content, deals and so much more!</p>
 
             <NewsletterForm />

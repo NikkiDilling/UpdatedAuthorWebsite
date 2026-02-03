@@ -4,7 +4,7 @@
     height: 100%;
     margin: auto;
     display: flex;
-    padding: 0 0 10px 0;
+    padding: 0 0 40px 0;
     flex-direction: column;
     text-align: justify;
     line-height: 2;
@@ -37,9 +37,10 @@
 
 
 .pfp {
-    width: 250px;
+  
+      width: 360px;
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 
@@ -102,10 +103,10 @@
 }
 
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1000px) {
 
     .banner {
-        max-height: 280px;
+        max-height: 250px;
     }
 
     .container {
@@ -122,7 +123,7 @@
     .desktopView {
         display: block;
         width: 90%;
-        margin-left: auto;
+        margin: 15px auto;
     }
 
     .mobileView {
@@ -140,7 +141,16 @@
 
 
     .pfp {
-        width: 360px;
+          width: 100%;
+    }
+
+    .mainSection {
+
+
+        .section {
+
+            flex-direction: row;
+        }
     }
 
 

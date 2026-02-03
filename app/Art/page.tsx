@@ -19,7 +19,7 @@ import Image from 'next/image';
 export default function ArtPage() {
     const [open, setOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
-
+    
     const handleOpen = (image: any) => {
         setSelectedImage(image);
         setOpen(true);
@@ -78,7 +78,7 @@ export default function ArtPage() {
 
             <Swiper
                 modules={[Navigation]}
-                slidesPerView={3}
+                slidesPerView={2}
                 spaceBetween={30}
                 grabCursor
                 loop={true}
@@ -92,7 +92,7 @@ export default function ArtPage() {
                         onClick={() => handleOpen(item.img)} key={index}>
                         <div className={classes.imageWrapper}>
                             <Image
-                                key={index}                                
+                                key={index}
                                 src={item.img}
                                 alt={item.title}
                                 loading="lazy"
@@ -129,4 +129,8 @@ export default function ArtPage() {
             <ImagePopUp image={selectedImage} open={open} handleClose={() => setOpen(false)} />
         </div>
     );
+}
+
+function useWindowSize() {
+    throw new Error('Function not implemented.');
 }
