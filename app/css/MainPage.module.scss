@@ -1,12 +1,4 @@
 .container {
-    /*     background: #ffff;
-    color: #39275B;
-    height: 100%;
-    margin: 30px auto;
-    display: flex;
-    padding: 0 50px;
-    padding-bottom: 15px;
-    flex-direction: column; */
     background: #ffff;
     color: #39275B;
     height: 100%;
@@ -45,7 +37,9 @@
 
 
 .pfp {
-    width: 360px;
+    width: 250px;
+    display: block;
+    margin: 0 auto; 
 }
 
 
@@ -58,17 +52,17 @@
 .image {
     display: inline-block;
     margin-right: 15px;
-} 
+}
 
 
 .mainSection {
     flex: 3;
     margin-top: 15px;
- padding: 0 50px;
+    padding: 0 50px;
 
     .section {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
 
         .sectionContent {
             display: flex;
@@ -91,7 +85,7 @@
 
 .banner {
     width: 100%;
-    max-height: 280px;
+    max-height: 100px;
     margin: 0;
     /* controls how tall the banner is */
     display: flex;
@@ -109,6 +103,11 @@
 
 
 @media only screen and (min-width: 1600px) {
+
+    .banner {
+        max-height: 280px;
+    }
+
     .container {
         display: flex;
         flex-direction: row;
@@ -139,8 +138,9 @@
         }
     }
 
+
     .pfp {
-        width: 250px;
+        width: 360px;
     }
 
 

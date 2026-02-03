@@ -13,7 +13,7 @@
 
 main {
   flex: 1;
-  padding-top: 150px;
+  padding-top: 50px;
 }
 
 .unreleased {
@@ -25,12 +25,20 @@ a {
 }
 
 h3 {
-    text-align: center;
-    font-size: 36px;
-    margin: 0;
-    font-style: italic;
+  text-align: center;
+  font-size: 36px;
+  margin: 0;
+  font-style: italic;
 }
 
+div[class~="MuiDrawer-paper"] {
+  width: 50vw !important;
+}
+
+div[class="swiper-button-prev"],
+div[class="swiper-button-next"] {
+    color: #39275B;
+}
 
 @theme inline {
   --color-background: var(--background);
@@ -54,7 +62,7 @@ body {
 
 @media only screen and (min-width: 1000px) {
   main {
-    padding-top: 50px;
+    padding-top: 150px;
   }
 
 }
