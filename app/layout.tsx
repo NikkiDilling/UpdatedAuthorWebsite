@@ -26,7 +26,7 @@ export default function RootLayout({
           <Header />
         </header>
 
-        <main style={{ flex: 1 }}>
+        <main>
           {children}
         </main>
 
