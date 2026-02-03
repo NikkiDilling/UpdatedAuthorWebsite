@@ -1,0 +1,105 @@
+/*    div[class~="MuiDrawer-paper"] {
+        width: 50vw !important;
+    } */
+
+    .listItem a  div span, .listItem svg{
+        font-size: 42px !important;
+        width: fit-content;
+        color: #39275B;
+        text-decoration: none !important;
+    }
+    .listItem {
+        margin: 20px;
+    }
+
+    .listItem svg{
+        fill: #39275B;
+    }
+   .container {
+        background: #EFEEFC;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 150px;
+        font-size: 40px;
+        position: fixed;
+        z-index: 1000;
+
+        a {
+            text-decoration: none !important;
+            cursor: pointer;
+        }
+
+    }
+
+    .title {
+        color: #39275B;
+        width: fit-content;
+        margin-left: 20px;
+    }
+
+    .navigation {
+        flex: 3;
+    }
+
+    .icons {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        margin-right: 20px;
+        justify-content: end;
+        align-items: center;
+        height: 100%;
+        gap: 20px;
+
+        .icon {
+            color: #39275B;
+            cursor: pointer;
+        }
+
+        .icon:hover {
+            scale: 1.06;
+            transition: all 0.4s ease-in-out;
+        }
+
+    }
+
+    .navigation {
+        display: none;
+    }
+
+
+    .burgerMenu {
+        display: block;
+        margin-left: auto;
+        margin-right: 20px;
+        cursor: pointer;
+
+        svg {
+            font-size: 50px !important;
+        }
+    }
+
+
+    @media only screen and (min-width: 1000px) {
+        .container {
+            height: 50px;
+            font-size: 22px;
+        }
+
+
+
+        .title {
+            font-size: 28px;
+        }
+
+
+        .navigation {
+            display: block;
+        }
+
+        .burgerMenu {
+            display: none;
+        }
+    }

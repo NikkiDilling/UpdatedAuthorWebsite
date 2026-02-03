@@ -1,0 +1,23 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+    width: 40%;
+    margin: auto;
+
+    .subscribeBtn{
+        margin-top: 15px;
+        background-color: #39275B;
+        color: white;
+
+        &:hover{
+            background-color: #2e1e45;
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .form{
+        width: 90%;
+    }
+}

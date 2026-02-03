@@ -1,0 +1,89 @@
+.container {
+    background: #ffff;
+    color: #39275B;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    padding: 0 0 10px 0;
+    flex-direction: column;
+
+    h2 {
+        font-size: 30px;
+        font-style: italic;
+        padding: 5px 0 !important;
+    }
+
+    .textContainer {
+        margin: auto;
+        width: 90%;
+    }
+
+    .text {
+        margin: 15px 0;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        padding: 0 !important;
+        margin: auto;
+
+        .map {
+            width: 40%;
+        }
+
+        img {
+            display: block;
+            width: 280px;
+            margin: 0 auto;
+        }
+    }
+
+    .divider {
+        display: block;
+        margin: 40px auto !important;
+        width: 250px;
+    }
+
+
+    circle,
+    path {
+        fill: #755da3;
+    }
+
+    .bookTitle{
+        font-style: italic;
+        font-weight: 700;
+        color: rgb(231, 14, 134);
+    }
+    .quotes {
+        font-size: 28px;
+        line-height: 2;
+        margin-top: 30px;
+        font-style: italic;
+        text-align: center;
+        color: rgb(231, 14, 134);
+        padding: 20px;
+    }
+}
+
+
+.banner {
+    width: 100%;
+    max-height: 360px;
+    margin: 0;
+    /* controls how tall the banner is */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.banner img {
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+@media only screen and (min-width: 1600px) {}

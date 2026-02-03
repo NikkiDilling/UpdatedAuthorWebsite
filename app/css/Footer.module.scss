@@ -1,0 +1,23 @@
+    .container {
+        background: #EFEEFC;
+        color: #39275B;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        min-height: 100px;
+        font-size: 22px;
+
+        div {
+            margin: 0 auto;
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+
+        .container {
+            min-height: 60px;
+            font-size: 20px;
+        }
+
+    }
