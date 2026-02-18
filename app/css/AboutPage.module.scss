@@ -9,22 +9,34 @@
     flex-direction: column;
     line-height: 2;
 
-    img{
+    img {
         max-width: 500px;
         object-fit: contain;
     }
 }
 
 
-.text{
+.text {
     margin: 15px 0;
 }
- 
-.section{
+
+.section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
+.greeting {
+    text-align: center;
+}
+
+.starSign {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: "20px 0 20px 0";
+    margin: 15px auto;
+}
 
 .divider {
     display: block;
@@ -32,3 +44,24 @@
     width: 250px;
 }
 
+.desktop {
+    display: none;
+}
+
+.mobile {
+    display: block;
+}
+
+@media only screen and (min-width: 1000px) {
+    .section {
+        flex-direction: row;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+}

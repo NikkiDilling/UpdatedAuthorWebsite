@@ -4,7 +4,7 @@ import about from "../../public/assets/about image.webp";
 import aries from "../../public/assets/aries.webp";
 import divider from "../../public/assets/divider.webp";
 import student from "../../public/assets/student.webp";
-import Image from 'next/image'; 
+import Image from 'next/image';
 
 export default function AboutPage() {
 
@@ -13,15 +13,29 @@ export default function AboutPage() {
     <div className={classes.container}>
 
       <div className={classes.section}>
-    <Image src={about} alt="About Nicole" width={500} />
-        <div>
-          <h1>Hi, I'm Nicole!</h1>
+        <div className={classes.mobile}>
+          <h1 className={classes.greeting}>Hi, I'm Nicole!</h1>
 
-          <div style={{ display: "flex", flexDirection: "row", alignItems: "center", padding: "20px 0 20px 0" }}>
+          <div className={classes.starSign}>
             <div>Star Sign:</div>
             <Image src={aries} alt="star sign" width={100} />
           </div>
+        </div>
+        
+        <Image src={about} alt="About Nicole" width={500} />
+
+        <div>
+          <div className={classes.desktop}>
+            <h1 className={classes.greeting}>Hi, I'm Nicole!</h1>
+
+            <div className={classes.starSign}>
+              <div>Star Sign:</div>
+              <Image src={aries} alt="star sign" width={100} />
+            </div>
+          </div>
           <div>
+
+
 
             <div className={classes.text}>
               For as long as I can remember I've always loved writing and drawing. Somewhere around middle-school I started writing silly little novellas and short stories.
@@ -58,7 +72,7 @@ export default function AboutPage() {
 
         <Image
           src={student}
-            alt="student image"
+          alt="student image"
           style={{ width: "350px", height: "auto", objectFit: "contain", margin: "0 0 0 20px" }}
         />
       </div>
@@ -76,7 +90,7 @@ export default function AboutPage() {
       </div>
       <Image src={divider} alt="divider" className={classes.divider} />
 
-{/*       <div>
+      {/*       <div>
         <div>My favourite books:</div>
         <ul>
           <li>Hunger Games</li>

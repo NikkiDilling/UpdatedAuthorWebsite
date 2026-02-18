@@ -39,9 +39,21 @@
     margin: 20px auto !important;
     width: 250px;
 }
+
+
+.noPosts {
+    font-style: italic;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #39275B;
+    border-radius: 12px;
+    padding: 10px;
+}
+
 @media only screen and (min-width: 1600px) {
 
     .divider {
-    display: none;
+        display: none;
     }
 }

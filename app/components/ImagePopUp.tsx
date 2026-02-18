@@ -1,8 +1,9 @@
 import { Dialog, DialogContent, IconButton } from "@mui/material";
 import CloseIcon from '@mui/icons-material/Close';
-
+import Image from 'next/image';
 
 export default function ImagePopUp(props: { image: any, open: boolean, handleClose: () => void }) {
+    
     return (
         <div>
 
@@ -43,7 +44,7 @@ export default function ImagePopUp(props: { image: any, open: boolean, handleClo
                         justifyContent: 'center',
                     }}
                 >
-                    <img
+                    <Image
                         src={props.image}
                         alt=""
                         style={{

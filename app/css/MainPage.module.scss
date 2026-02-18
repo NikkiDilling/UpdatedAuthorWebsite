@@ -2,6 +2,7 @@
     background: #ffff;
     color: #39275B;
     height: 100%;
+    width: 100%;
     margin: auto;
     display: flex;
     padding: 0 0 40px 0;
@@ -59,7 +60,8 @@
 .mainSection {
     flex: 3;
     margin-top: 15px;
-    padding: 0 50px;
+    padding: 0 20px;
+    width: 100%;
 
     .section {
         display: flex;
@@ -139,13 +141,9 @@
         }
     }
 
-    .pfp {
-          width: 360px;
-    }
-
 
     .mainSection {
-
+        padding: 0 50px;
 
         .section {
 

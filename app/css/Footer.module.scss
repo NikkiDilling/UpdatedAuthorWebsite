@@ -2,11 +2,13 @@
         background: #EFEEFC;
         color: #39275B;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         width: 100%;
-        min-height: 100px;
+        min-height: 150px;
         font-size: 22px;
+        padding: 10px;
 
         div {
             margin: 0 auto;

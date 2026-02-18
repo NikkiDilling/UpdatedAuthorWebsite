@@ -15,7 +15,7 @@ export default function ProjectSunsetPage() {
         <div>
 
           <div className={classes.quotes}>
-            <div>"Even demons don't like the dark."</div>
+            <div>"Even demons despise the dark."</div>
           </div>
 
           <Image src={divider} className={classes.divider} alt="divider" />

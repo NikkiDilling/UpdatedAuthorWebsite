@@ -23,8 +23,8 @@ export default function Home() {
             <Image src={pfp} alt="profile image" className={classes.pfp} />
             <div className={classes.sectionContent}>
               <div>
-                <div className={classes.text}>Hi! My name is Nicole D. Hansen, and I'm an indie author, from Denmark. </div>
-                <div className={classes.text}>I write delicious slow burn romantasy with characters and plot-lines that will heal your inner child. </div>
+                <div className={classes.text}>Hi! My name is Nicole, and I'm an indie author, from Denmark. </div>
+                <div className={classes.text}>I write delicious slow burn romantasy with redeamable villains and plot-lines that will heal your inner child. </div>
                 <div className={classes.text}>I also daylight as a software developer. </div>
               </div>
               <Link href='/About' className={classes.readMoreBtn} >Learn more about me</Link>
@@ -43,9 +43,9 @@ export default function Home() {
 
           <div className={classes.section}>
             <div className={classes.sectionContent}>
-              <h3>"Project Sunset"</h3>
+              <h3>Prisoner of Magnolia</h3>
               <div>
-                <div>"Project Sunset" the first book of the Elven Wastelands series. It is my debut romantasy novel I’ve been writing for over 5 years...</div>
+                <div>Prisoner of Magnolia the first book of the Elven Wastelands series. It is my debut romantasy novel I’ve been writing for over 5 years...</div>
               </div>
               <Link href='/Books' className={classes.readMoreBtn}>Read more</Link>
             </div>

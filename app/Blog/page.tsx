@@ -65,7 +65,7 @@ export default function BlogPage() {
 
         {(campaigns === null || campaigns.length <= 0) ? (
           <div className={classes.postsContainer}>
-            <div>There are no posts yet. Come back later</div>
+            <div className={classes.noPosts}>There are no posts yet. Come back later</div>
           </div>
 
         ) : (
