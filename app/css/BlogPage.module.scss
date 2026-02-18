@@ -21,8 +21,7 @@
     margin-top: 30px;
     flex: 4;
     display: flex;
-    flex-direction: row;
-
+    flex-direction: column;
 }
 
 .newsletterSignup {
@@ -52,6 +51,9 @@
 }
 
 @media only screen and (min-width: 1600px) {
+    .postsContainer {
+        flex-direction: row;
+    }
 
     .divider {
         display: none;
