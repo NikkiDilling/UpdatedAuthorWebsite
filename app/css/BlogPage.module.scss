@@ -6,7 +6,7 @@
     height: 100%;
     margin: 10px auto;
     display: flex;
-    padding: 0 50px;
+    padding: 0 10px;
     padding: 20px 15px;
     text-align: justify;
     line-height: 2;
@@ -52,6 +52,12 @@
 }
 
 @media only screen and (min-width: 1600px) {
+
+    .container {
+        flex-direction: row;
+        padding: 0 50px;
+    }
+
     .postsContainer {
         flex-direction: row;
     }

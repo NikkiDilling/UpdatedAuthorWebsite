@@ -22,7 +22,7 @@ export default function AboutPage() {
           </div>
         </div>
         
-        <Image src={about} alt="About Nicole" width={500} />
+        <Image src={about} alt="About Nicole" className={classes.aboutImg} />
 
         <div>
           <div className={classes.desktop}>
