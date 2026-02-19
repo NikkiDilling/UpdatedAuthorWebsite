@@ -59,35 +59,43 @@ export default function BlogPage() {
 
       <h3>Newsletter Archive</h3>
 
-      <div className={classes.description}>Read previous newsletters where I share my writing progress, exclusive book content, writing advice and life updates. </div>
+      <div className={classes.bodyContainer}>
+        <div>
+          <div className={classes.description}>Read previous newsletters where I share my writing progress, exclusive book content, writing advice and life updates. </div>
 
-      <div className={classes.body}>
+          <div className={classes.body}>
 
-        {(campaigns === null || campaigns.length <= 0) ? (
-          <div className={classes.postsContainer}>
-            <div className={classes.noPosts}>There are no posts yet. Come back later</div>
+            {(campaigns === null || campaigns.length <= 0) ? (
+              <div className={classes.postsContainer}>
+                <div className={classes.noPosts}>There are no posts yet. Come back later</div>
+              </div>
+
+            ) : (
+              <div className={classes.postsContainer}>
+                {
+                  campaigns.map((campaign: any) => (
+                    <BlogPostPreview key={campaign.id} campaign={campaign} />
+
+                  ))
+                }
+              </div>
+
+            )}
           </div>
 
-        ) : (
-          <div className={classes.postsContainer}>
-            {
-              campaigns.map((campaign: any) => (
-                <BlogPostPreview key={campaign.id} campaign={campaign} />
+          <Image src={divider} className={classes.divider} alt="divider" />
+        </div>
 
-              ))
-            }
-          </div>
 
-        )}
 
-        <Image src={divider} className={classes.divider} alt="divider" />
 
         <div className={classes.newsletterSignup}>
           <h3>Sign up for the newsletter</h3>
           <NewsletterForm />
         </div>
+
       </div>
 
-    </div>
+    </div >
   );
 }
