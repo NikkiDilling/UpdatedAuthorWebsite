@@ -7,7 +7,7 @@ export default function ContactPage() {
 
 
   return (
-    <div style={{display: "flex", flexDirection:"column", width: "90%", margin: "30px auto", justifyContent: "center", alignItems: "center", fontSize: "22px"}}>
+    <div style={{display: "flex", flexDirection:"column", width: "90%", margin: "30px auto", justifyContent: "center", alignItems: "center", fontSize: "22px", padding: "0 20px"}}>
 
       <h3>Contact Me</h3>
 
