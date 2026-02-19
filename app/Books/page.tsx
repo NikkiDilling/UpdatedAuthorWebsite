@@ -45,20 +45,7 @@ export default function ProjectSunsetPage() {
 
             </div>
           </div>
-          <Image src={divider} className={classes.divider} alt="divider" />
 
-          <div className={classes.textContainer}>
-            <h3>Main characters</h3>
-            <div className={classes.text}>
-              <strong>Elayah</strong> - Princess of Elria.
-            </div>
-            <div className={classes.text}>
-              <strong>Tayrem</strong> - Elayah's loyal guard and best friend.
-            </div>
-            <div className={classes.text}>
-              <strong>Rayn</strong> - Prince of Vanadium.
-            </div>
-          </div>
           <Image src={divider} className={classes.divider} alt="divider" />
           <div>
             <Image
