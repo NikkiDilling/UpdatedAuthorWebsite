@@ -7,6 +7,7 @@ import BlogPostPreview from '../components/BlogPostPreview';
 import NewsletterForm from '../components/NewsLetterForm';
 import divider from "../../public/assets/divider.webp";
 import Image from 'next/image';
+import { Skeleton } from '@mui/material';
 
 export interface ICampaign {
   id: string;
@@ -25,6 +26,7 @@ export interface ICampaignEmail {
 
 export default function BlogPage() {
   const [campaigns, setCampaigns] = useState<ICampaign[] | null>(null);
+  const [dataLoaded, setDataLoaded] = useState(false);
   const token = process.env.NEXT_PUBLIC_NewsletterToken;
 
   useEffect(() => {
@@ -46,10 +48,12 @@ export default function BlogPage() {
       const filteredData = data.filter(campaign => campaign.status === "sent");
       console.log(data);
       setCampaigns(filteredData);
+      setDataLoaded(true);
 
 
     } catch (error) {
       console.error("Error submitting form:", error);
+           setDataLoaded(true);
     }
 
   };
@@ -65,15 +69,39 @@ export default function BlogPage() {
 
           <div className={classes.body}>
 
-            {(campaigns === null || campaigns.length <= 0) ? (
+            {dataLoaded === false && (
+              <div className={classes.postsContainer}>
+                <Skeleton
+                  sx={{ bgcolor: 'grey.200', margin: "15px" }}
+                  variant="rectangular"
+                  width={210}
+                  height={118}
+                  
+                />
+                <Skeleton
+                  sx={{ bgcolor: 'grey.200', margin: "15px" }}
+                  variant="rectangular"
+                  width={210}
+                  height={118}
+                />
+                <Skeleton
+                  sx={{ bgcolor: 'grey.200', margin: "15px" }}
+                  variant="rectangular"
+                  width={210}
+                  height={118}
+                />
+              </div>
+            )
+
+            }
+            {((campaigns === null || campaigns.length <= 0) && dataLoaded) ? (
               <div className={classes.postsContainer}>
                 <div className={classes.noPosts}>There are no posts yet. Come back later</div>
               </div>
 
             ) : (
               <div className={classes.postsContainer}>
-                {
-                  campaigns.map((campaign: any) => (
+                {campaigns && campaigns.map((campaign: any) => (
                     <BlogPostPreview key={campaign.id} campaign={campaign} />
 
                   ))
@@ -87,10 +115,8 @@ export default function BlogPage() {
         </div>
 
 
-
-
         <div className={classes.newsletterSignup}>
-          <h3>Sign up for the newsletter</h3>
+          <h3>Sign up for the newsletter</h3> {/* push this a bit higher up (next to title) */}
           <NewsletterForm />
         </div>
 

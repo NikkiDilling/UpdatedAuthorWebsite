@@ -27,7 +27,8 @@
 }
 
 .newsletterSignup {
-   width: 90vw !important;
+    width: 90vw !important;
+    margin: 10px auto;
 }
 
 .description {
@@ -58,11 +59,6 @@
 }
 
 
-.bodyContainer>:nth-child(2) {
-    width: 960%;
-    margin: 10px auto;
-}
-
 @media only screen and (min-width: 1000px) {
 
     .container {
@@ -77,6 +73,14 @@
     .bodyContainer>:first-child {
         width: 75%;
         padding: 0 10px;
+    }
+
+    .newsletterSignup {
+        width: 24% !important;
+
+        h3{
+            font-size: 18px;
+        }
     }
 
     .postsContainer {
