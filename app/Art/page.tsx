@@ -16,6 +16,7 @@ import 'swiper/swiper-bundle.css';
 import ImagePopUp from '../components/ImagePopUp';
 import { useState } from 'react';
 import Image from 'next/image';
+import divider from "../../public/assets/divider.webp";
 
 export default function ArtPage() {
     const [open, setOpen] = useState(false);
@@ -77,20 +78,28 @@ export default function ArtPage() {
                     as well as some of my own amateur artwork.
                 </div>
 
-                <div>
-                    Hope you enjoy!
-                </div>
 
             </div>
+            <Image src={divider} className={classes.divider} alt="divider" />
 
             <Swiper
                 modules={[Navigation]}
-                slidesPerView={2}
-                spaceBetween={30}
                 grabCursor
                 loop={true}
                 navigation
-
+                breakpoints={{
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30
+                    },
+                    1200: {
+                        slidesPerView: 3,
+                        spaceBetween: 60,
+                    },
+                }}
                 className={classes.swiper}
             >
 
