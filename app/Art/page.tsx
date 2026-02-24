@@ -7,6 +7,7 @@ import sigil from '../../public/assets/Vanadian sigil.webp';
 import firstMeeting from '../../public/assets/first meeting.webp';
 import tayremChained from '../../public/assets/Tayrem-chained.webp';
 import elayah from '../../public/assets/Elayah-mosaic.webp';
+import elayahNrayn from '../../public/assets/Elayah&Rayn.webp';
 import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -19,13 +20,19 @@ import Image from 'next/image';
 export default function ArtPage() {
     const [open, setOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
-    
+
     const handleOpen = (image: any) => {
         setSelectedImage(image);
         setOpen(true);
     }
 
     const itemData = [
+        {
+            img: elayahNrayn,
+            title: 'Elayah & Rayn',
+            author: 'Zoune',
+            ig: "https://www.instagram.com/artbyzou_/"
+        },
         {
             img: elayah,
             title: 'Elayah',
@@ -35,7 +42,7 @@ export default function ArtPage() {
             img: tayremArt,
             title: 'Tayrem commission',
             author: 'Kostojj',
-            ig: "https://www.instagram.com/kostojjn"
+            ig: "https://www.instagram.com/kostojjn/"
         },
         {
             img: tayremNElayah,
@@ -105,7 +112,7 @@ export default function ArtPage() {
                                 (
                                     <div style={{ display: "flex", flexDirection: "row" }}>
                                         <div className={classes.author}>by: {item.author}</div>
-                                        <a href='https://www.instagram.com/ndhansen_' target='_blank' style={{ marginLeft: "10px" }}>
+                                        <a href={item.ig} target='_blank' style={{ marginLeft: "10px" }}>
                                             <FontAwesomeIcon
                                                 icon={faInstagram}
                                                 className={classes.icon}

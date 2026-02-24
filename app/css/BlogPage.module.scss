@@ -27,7 +27,7 @@
 }
 
 .newsletterSignup {
-    flex: 1;
+   width: 90vw !important;
 }
 
 .description {
@@ -58,15 +58,15 @@
 }
 
 
-    .bodyContainer>:nth-child(2){
-        width: 960%;
-        margin: 10px auto;
-    }
+.bodyContainer>:nth-child(2) {
+    width: 960%;
+    margin: 10px auto;
+}
 
 @media only screen and (min-width: 1000px) {
 
     .container {
-        
+
         padding: 0 50px;
     }
 
@@ -74,7 +74,7 @@
         flex-direction: row;
     }
 
-    .bodyContainer>:first-child{
+    .bodyContainer>:first-child {
         width: 75%;
         padding: 0 10px;
     }
