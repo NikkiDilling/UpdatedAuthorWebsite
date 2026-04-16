@@ -38,7 +38,11 @@ div[class~="MuiDrawer-paper"] {
 div[class="swiper-button-prev"],
 div[class="swiper-button-next"] {
     color: #39275B;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    border-radius: 35px;
 }
+
 
 @theme inline {
   --color-background: var(--background);

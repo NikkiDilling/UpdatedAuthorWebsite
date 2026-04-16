@@ -61,7 +61,7 @@ export default function BlogPage() {
   return (
     <div className={classes.container}>
 
-      <h3>Newsletter Archive</h3>
+      <h3>Newsletter Archive</h3> {/* is not on 1 line in mobile view */}
 
       <div className={classes.bodyContainer}>
         <div>
