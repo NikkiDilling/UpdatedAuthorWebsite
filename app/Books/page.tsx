@@ -14,16 +14,18 @@ export default function ProjectSunsetPage() {
       <main>
         <div>
 
-          <div className={classes.quotes}>
-            <div>"Even demons despise the dark."</div>
-          </div>
 
-          <Image src={divider} className={classes.divider} alt="divider" />
+
           <div className={classes.textContainer}>
 
-            <div>Enter a world of elves, elemental spirits and intrigue!</div>
-            <br />
-            <div><span className={classes.bookTitle}>Prisoner of Magnolia</span>  is book one of the Elven Wastelands series.</div>
+            <h2 className={classes.intro}>
+              <div>Enter a world of elves, elemental spirits and delicious villains!</div>
+              <br />
+              <div>Start the Elven Wastelands series with book 1: <span className={classes.bookTitle}>Prisoner of Magnolia</span> .</div>
+
+            </h2>
+
+
 
             <h3 style={{ margin: "20px auto" }}>Synopsis</h3>
             <div className={classes.text}>
@@ -46,6 +48,10 @@ export default function ProjectSunsetPage() {
             </div>
           </div>
 
+          <div className={classes.quotes}>
+            <div>"Even demons despise the dark."</div>
+          </div>
+
           <Image src={divider} className={classes.divider} alt="divider" />
           <div>
             <Image
@@ -63,8 +69,17 @@ export default function ProjectSunsetPage() {
 
           <div className={classes.textContainer}>
             <h2> Elven Wastelands series</h2>
-            <div className={classes.text}>Currently Elven Wastelands is a four book series, with the first book being <span className={classes.bookTitle}>Prisoner of Magnolia</span>, set to release in summer of 2026.</div>
-            <div className={classes.text}>Books two to four are in various stages of planning and writing, but are set to release at most within 15 months of each other.</div>
+            <div className={classes.text}> Elven Wastelands is an ongoing series, with the first book being <span className={classes.bookTitle}>Prisoner of Magnolia</span>, set to release in summer of 2026.</div>
+
+            <div className={classes.statusContainer}>
+              <div>Book 1 status:</div>
+              <div>Draft 4 (Editing)</div>
+            </div>
+            <div className={classes.statusContainer}>
+              <div>Book 2 status:</div>
+              <div>Plotting</div>
+            </div>
+
           </div>
 
 

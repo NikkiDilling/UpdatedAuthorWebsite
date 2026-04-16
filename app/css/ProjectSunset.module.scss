@@ -13,6 +13,19 @@
         padding: 5px 0 !important;
     }
 
+    .intro{
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .statusContainer{
+        display: flex; 
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
     .textContainer {
         margin: auto;
         width: 90%;
