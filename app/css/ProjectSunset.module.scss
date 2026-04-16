@@ -13,17 +13,35 @@
         padding: 5px 0 !important;
     }
 
-    .intro{
+    .intro {
         font-size: 22px;
         font-weight: 600;
         text-align: center;
         margin-top: 30px;
     }
 
-    .statusContainer{
-        display: flex; 
+    .statusContainer {
+        display: flex;
         flex-direction: row;
-        margin-top: 10px;
+        margin: 20px 0;
+
+        svg {
+            circle {
+                fill: none;
+            }
+
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: 5px;
+        }
+
+        div:first-child {
+            margin-right: 10px;
+        }
     }
 
     .textContainer {

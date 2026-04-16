@@ -3,6 +3,7 @@ import banner from "../../public/assets/Elven Wastelands.png";
 import map from "../../public/assets/world map.webp";
 import divider from "../../public/assets/divider.webp";
 import Image from 'next/image';
+import { CircularProgress } from '@mui/material';
 
 export default function ProjectSunsetPage() {
 
@@ -68,16 +69,34 @@ export default function ProjectSunsetPage() {
           <Image src={divider} className={classes.divider} alt="divider" />
 
           <div className={classes.textContainer}>
-            <h2> Elven Wastelands series</h2>
+            <h2 style={{textAlign: "center"}}> Elven Wastelands series</h2>
             <div className={classes.text}> Elven Wastelands is an ongoing series, with the first book being <span className={classes.bookTitle}>Prisoner of Magnolia</span>, set to release in summer of 2026.</div>
 
             <div className={classes.statusContainer}>
-              <div>Book 1 status:</div>
-              <div>Draft 4 (Editing)</div>
+              <CircularProgress
+                enableTrackSlot
+                variant="determinate"
+                value={75}
+                aria-label="Export data"
+              />
+              <div>
+                <div>Book 1 status:</div>
+                <div>Draft 4 (Editing)</div>
+              </div>
+
             </div>
             <div className={classes.statusContainer}>
-              <div>Book 2 status:</div>
-              <div>Plotting</div>
+              <CircularProgress
+                enableTrackSlot
+                variant="determinate"
+                value={5}
+                aria-label="Export data"
+              />
+              <div>
+                <div>Book 2 status:</div>
+                <div>Plotting</div>
+              </div>
+
             </div>
 
           </div>
