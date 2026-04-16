@@ -38,8 +38,7 @@
 
 
 .pfp {
-
-    width: 100%;
+    width: 55vw;
     display: block;
     margin: 0 auto;
 }
@@ -104,6 +103,14 @@
 
 
 @media only screen and (min-width: 1000px) {
+
+    .pfp {
+        width: 27vw;
+    }
+
+     .divider {
+        display: none;
+    }
 
     .banner {
         max-height: 250px;
