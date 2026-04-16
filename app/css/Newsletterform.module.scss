@@ -1,23 +1,40 @@
-.form{
+.form {
     display: flex;
     flex-direction: column;
     padding: 5px 0;
     width: 100%;
     margin: auto;
 
-    .subscribeBtn{
+    .subscribeBtn {
         margin-top: 15px;
         background-color: #39275B;
         color: white;
 
-        &:hover{
+        &:hover {
             background-color: #2e1e45;
         }
     }
 }
 
+.status {
+    margin: 15px 0;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 5px auto !important;
+    padding: 10px 15px;
+    background-color: #39275B !important;
+    color: #ffff !important;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 @media only screen and (min-width: 1600px) {
-    .form{
+    .form {
         width: 90%;
     }
 }

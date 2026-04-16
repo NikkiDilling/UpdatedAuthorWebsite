@@ -8,7 +8,6 @@
     padding: 0 0 40px 0;
     flex-direction: column;
     text-align: justify;
-    line-height: 2;
 
     h1 {
         font-size: 40px;
@@ -120,8 +119,6 @@
     .container {
         display: flex;
         flex-direction: row;
-        font-size: 18px;
-
         h1 {
             font-size: 60px;
             font-style: italic;

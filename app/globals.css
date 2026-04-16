@@ -7,8 +7,10 @@
   margin: 0;
   box-sizing: border-box;
   font-style: normal;
-  font-size: 20px;
+  font-size: var(--wp--preset--font-size--medium);
   text-align: justify;
+  line-height: 1.5;
+
 }
 
 main {
@@ -37,10 +39,10 @@ div[class~="MuiDrawer-paper"] {
 
 div[class="swiper-button-prev"],
 div[class="swiper-button-next"] {
-    color: #39275B;
-    background: rgba(255, 255, 255, 0.6);
-    padding: 10px;
-    border-radius: 35px;
+  color: #39275B;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  border-radius: 35px;
 }
 
 

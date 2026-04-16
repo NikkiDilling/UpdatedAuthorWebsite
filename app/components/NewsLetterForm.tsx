@@ -5,18 +5,21 @@ import axios from "axios";
 import { Button, CircularProgress, TextField } from "@mui/material";
 import classes from './../css/Newsletterform.module.scss';
 import Link from "next/link";
+import Alert from '@mui/material/Alert';
+
 
 export default function NewsletterForm() {
     const [email, setEmail] = useState("");
-    const [status, setStatus] = useState<string | null>(null);
+    const [status, setStatus] = useState<string | null>();
     const token = process.env.NEXT_PUBLIC_NewsletterToken;
     const groupId = process.env.NEXT_PUBLIC_GroupId;
+
 
     const handleSubmit = async (e: any) => {
         try {
             e.preventDefault();
             setStatus("loading");
-             
+
 
             const body = {
                 email: email,
@@ -29,12 +32,12 @@ export default function NewsletterForm() {
                 "Authorization": "Bearer " + token
             };
 
-             
+
             const res = await axios.post((settings.baseUrl + "/subscribers"), body, { headers: headers });
 
             const data = await res;
             console.log(data);
-             
+
             setStatus("done");
         } catch (error) {
             console.error("Error submitting form:", error);
@@ -62,12 +65,26 @@ export default function NewsletterForm() {
                 </form>
             )}
             {status === "done" && (
-                <div>Thank you for subscribing!</div>
+                <Alert className={classes.status} severity="success">Thank you for subscribing!</Alert>
+
             )}
             {status === "error" && (
                 <div>
-                    <div>There was an error.</div>
-                    <Link href="https://preview.mailerlite.io/forms/1861321/170854974708778198/share" >Try again</Link>
+                    <Alert className={classes.status} severity="warning">
+                        <div style={{ width: "100%" }}>
+                            <div>There was an error.</div>
+                            <Button variant="contained" className={classes.button}
+                                onClick={() => {
+                                    window.open("https://preview.mailerlite.io/forms/1861321/170854974708778198/share", '_target');
+                                }}
+                            >
+                                Try again
+                            </Button>
+                        </div>
+
+
+
+                    </Alert>
                 </div>
 
             )}
