@@ -38,15 +38,16 @@
 
 
 .pfp {
-    width: 55vw;
+    width: 40vw;
     display: block;
     margin: 0 auto;
+    object-fit: contain;
 }
 
 
 .divider {
     display: block;
-    margin: 20px auto !important;
+    margin: 40px auto !important;
     width: 250px;
 }
 
@@ -85,7 +86,7 @@
 
 .banner {
     width: 100%;
-    max-height: 150px;
+    max-height: 100px;
     margin: 0;
     /* controls how tall the banner is */
     display: flex;
@@ -105,15 +106,15 @@
 @media only screen and (min-width: 1000px) {
 
     .pfp {
-        width: 27vw;
+        width: 25vw;
     }
 
-     .divider {
-        display: none;
+    .divider {
+        display: block;
     }
 
     .banner {
-        max-height: 250px;
+        max-height: 230px;
     }
 
     .container {
@@ -148,7 +149,7 @@
 
 
     .mainSection {
-        padding: 0 50px;
+        padding-right: 50px;
 
         .section {
 
@@ -161,4 +162,11 @@
     }
 
 
+}
+
+@media only screen and (min-width: 2000px) {
+
+    .banner {
+        max-height: 300px;
+    }
 }
