@@ -10,7 +10,7 @@ import Alert from '@mui/material/Alert';
 
 export default function NewsletterForm() {
     const [email, setEmail] = useState("");
-    const [status, setStatus] = useState<string | null>();
+    const [status, setStatus] = useState<string | null>(null);
     const token = process.env.NEXT_PUBLIC_NewsletterToken;
     const groupId = process.env.NEXT_PUBLIC_GroupId;
 
