@@ -6,7 +6,7 @@ import tayremNElayah from '../../public/assets/Tayrem & Elayah.webp';
 import sigil from '../../public/assets/Vanadian sigil.webp';
 import firstMeeting from '../../public/assets/first meeting.webp';
 import tayremChained from '../../public/assets/Tayrem-chained.webp';
-import elayah from '../../public/assets/Elayah-mosaic.webp';
+import elayah from '../../public/assets/Elayah-final.png';
 import elayahNrayn from '../../public/assets/Elayah&Rayn.webp';
 import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
