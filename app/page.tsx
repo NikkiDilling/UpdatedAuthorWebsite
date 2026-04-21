@@ -23,8 +23,7 @@ export default function Home() {
             <Image src={pfp} alt="profile image" className={classes.pfp} />
             <div className={classes.sectionContent}>
               <div>
-                <div className={classes.text}>Hi! My name is Nicole, and I'm an indie author, from Denmark. </div>
-                <div className={classes.text}>I write delicious slow burn romantasy with redeamable villains and plot-lines that will heal your inner child. </div>
+                <div className={classes.text}>Hi! My name is Nicole. I write delicious slow burn romantasy with redeamable villains and plot-lines that will heal your inner child. </div>
                 <div className={classes.text}>I also daylight as a software developer. </div>
               </div>
               <Link href='/About' className={classes.readMoreBtn} >Learn more about me</Link>
