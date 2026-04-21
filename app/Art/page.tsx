@@ -18,6 +18,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import divider from "../../public/assets/divider.webp";
 
+
 export default function ArtPage() {
     const [open, setOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
