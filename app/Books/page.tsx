@@ -9,9 +9,6 @@ export default function ProjectSunsetPage() {
 
   return (
     <div className={classes.container} id='Intro'>
-      <div className={classes.banner}>
-        <Image src={banner} alt="Elven Wastelands banner" />
-      </div>
       <main>
         <div>
 
@@ -30,22 +27,21 @@ export default function ProjectSunsetPage() {
 
             <h3 style={{ margin: "20px auto" }}>Synopsis</h3>
             <div className={classes.text}>
-              Elven greed knows no measure. In the pursuit of godly powers to have domain over nature they have angered it. Nature turns against them as wastelands devour their land and bring to life deadly creatures, making the outskirts of the continents uninhabitable.
-
+              Something had been clawing at the back of Elayah’s mind.
             </div>
             <div className={classes.text}>
-              Southern and northern kingdoms are still at odds, fighting for the power to hinder the wastelands’s advance.
-
+              As the heir to the throne of Elria, she was just supposed to retrieve her elemental power. In and out. Quick. But in her trip to her subconsciousness, the elemental power wasn't the only thing she brought back to a throne room full of watchful eyes. One of those gazes belonged to an old enemy from the north.
             </div>
 
             <div className={classes.text}>
-              As Elayah - princess of the southern kingdom becomes a High Elf  an enemy from the north seeks revenge on her kingdom. Her parents are killed. Tayrem, her guard and best-friend is imprisoned by Rayn - a northern prince. Rayn has his own agenda for Elayah and Tayrem, one of trials and revenge. But even he couldn’t guess  the outcome of his games...
-
+              What was supposed to be a cheerful celebration turned into the re-engulfed flames of the last war as the northern king threatened her kingdom. She’d hoped it was just an intimidation tactic, but when they invaded she lost everything.
             </div>
 
             <div className={classes.text}>
-              Now Elayah is forced to uncover the truth about herself and the state of the world, with a menacing shadow on her back. What she learns chills her blood and galvanises into action.
-
+              Her parents were dead, Tayrem captured and herself wed against her will, used as a pawn in Prince Rayn’s hands. Rayn has his own agenda for Elayah and Tayrem, one of trials and revenge. But even he couldn’t guess the outcome of his games…
+            </div>
+            <div className={classes.text}>
+              Trapped in an impossible situation, Elayah’s world crumbles down brick by brick as her captor unveils the secrets she’d been blind to all her life. Will she succumb to the darkness and give up, or will she save Tayrem and fight, defeating the odds against her?
             </div>
           </div>
 
@@ -69,7 +65,7 @@ export default function ProjectSunsetPage() {
           <Image src={divider} className={classes.divider} alt="divider" />
 
           <div className={classes.textContainer}>
-            <h2 style={{textAlign: "center"}}> Elven Wastelands series</h2>
+            <h2 style={{ textAlign: "center" }}> Elven Wastelands series</h2>
             <div className={classes.text}> Elven Wastelands is an ongoing series, with the first book being <span className={classes.bookTitle}>Prisoner of Magnolia</span>, set to release in summer of 2026.</div>
 
             <div className={classes.statusContainer}>

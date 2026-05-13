@@ -10,10 +10,6 @@ export default function Home() {
   return (
 
     <div>
-
-      <div className={classes.banner}>
-         <img src={banner.src} alt="Elven Wastelands banner" className={classes.image}/> 
-      </div>
       <div className={classes.container}>
 
         <div className={classes.mainSection}>
