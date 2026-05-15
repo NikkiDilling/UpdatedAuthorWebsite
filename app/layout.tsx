@@ -3,6 +3,7 @@ import { Metamorphous } from 'next/font/google';
 import "./globals.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Notification from "./components/Notification";
 
 const metamorphous = Metamorphous({
   subsets: ['latin'], // required
@@ -22,11 +23,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={metamorphous.className} >
-         <header>
+        <header>
           <Header />
+          <Notification
+            visible={true}
+            message="Join the Cover Reveal Team! Singups close May 23rd."
+            link="https://forms.gle/yDd6ZwfEWrzMdbC28"
+            linkTitle="Singup here"
+          />
         </header>
 
         <main>
+
           {children}
         </main>
 
@@ -34,6 +42,6 @@ export default function RootLayout({
           <Footer />
         </footer>
       </body>
-    </html>
+    </html >
   );
 }

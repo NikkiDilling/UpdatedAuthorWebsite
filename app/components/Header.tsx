@@ -5,9 +5,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 import MailIcon from '@mui/icons-material/Mail';
 import classes from '../css/Header.module.scss';
 import Navigation from './Navigation';
-import Link  from 'next/link';
+import Link from 'next/link';
 import { Box, List, ListItem, ListItemButton, ListItemIcon, SwipeableDrawer, ListItemText } from '@mui/material';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import ColorLensIcon from '@mui/icons-material/ColorLens';
 import Face3Icon from '@mui/icons-material/Face3';
@@ -15,6 +15,8 @@ import CallIcon from '@mui/icons-material/Call';
 
 export default function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const headerRef = useRef<HTMLDivElement>(null);
+
 
   const toggleDrawer =
     (open: boolean) =>
@@ -90,63 +92,62 @@ export default function Header() {
   );
 
   return (
-    <div className={classes.container}>
+    <div className={classes.container} ref={headerRef}>
 
-      <div className={classes.title}>
-        <Link href="/">Nicole D. Hansen</Link >
+      <div className={classes.containerHeader}>
+        <div className={classes.title}>
+          <Link href="/">Nicole D. Hansen</Link >
+        </div>
 
-      </div>
+        {/* Replace with burger menu on mobile! */}
+        <div className={classes.navigation}>
+          <Navigation />
 
-      {/* Replace with burger menu on mobile! */}
-      <div className={classes.navigation}>
-        <Navigation />
+        </div>
 
-      </div>
+        <div className={classes.icons}>
+          <a href='https://www.goodreads.com/user/show/176510995-nicole' target='_blank'>
+            <FontAwesomeIcon
+              icon={faGoodreads}
+              className={classes.icon}
+            />
+          </a>
 
-      <div className={classes.icons}>
-        <a href='https://www.goodreads.com/user/show/176510995-nicole' target='_blank'>
-          <FontAwesomeIcon
-            icon={faGoodreads}
-            className={classes.icon}
-          />
-        </a>
+          <a href='https://www.instagram.com/ndhansen_' target='_blank'>
+            <FontAwesomeIcon
+              icon={faInstagram}
+              className={classes.icon}
+            />
+          </a>
 
-        <a href='https://www.instagram.com/ndhansen_' target='_blank'>
-          <FontAwesomeIcon
-            icon={faInstagram}
-            className={classes.icon}
-          />
-        </a>
-
-        {/*         <a href='https://www.tiktok.com/@nicole.writes5' target='_blank'>
+          {/*         <a href='https://www.tiktok.com/@nicole.writes5' target='_blank'>
           <FontAwesomeIcon
             icon={faTiktok}
             className={classes.icon}
           />
         </a>
- */}
-        <a href='https://www.threads.net/@ndhansen_' target='_blank'>
-          <FontAwesomeIcon
-            icon={faThreads}
-            className={classes.icon}
-          />
-        </a>
+        */}
+          <a href='https://www.threads.net/@ndhansen_' target='_blank'>
+            <FontAwesomeIcon
+              icon={faThreads}
+              className={classes.icon}
+            />
+          </a>
 
+        </div>
+
+        <div className={classes.burgerMenu}>
+          <MenuIcon onClick={toggleDrawer(true)} style={{ cursor: 'pointer', marginLeft: "20px" }} />
+          <SwipeableDrawer
+            anchor={"right"}
+            open={isMenuOpen}
+            onClose={toggleDrawer(false)}
+            onOpen={toggleDrawer(true)}
+          >
+            {list()}
+          </SwipeableDrawer>
+        </div>
       </div>
-
-      <div className={classes.burgerMenu}>
-        <MenuIcon onClick={toggleDrawer(true)} style={{ cursor: 'pointer', marginLeft: "20px" }} />
-        <SwipeableDrawer
-          anchor={"right"}
-          open={isMenuOpen}
-          onClose={toggleDrawer(false)}
-          onOpen={toggleDrawer(true)}
-        >
-          {list()}
-        </SwipeableDrawer>
-      </div>
-
-
     </div>
   );
 }
