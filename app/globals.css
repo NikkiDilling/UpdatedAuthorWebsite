@@ -16,6 +16,7 @@
 
 main {
   flex: 1;
+  background: transparent;
 }
 
 .unreleased {
@@ -64,5 +65,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: #f9f9ff;
 }
 

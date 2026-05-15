@@ -59,6 +59,7 @@ export default function NewsletterForm() {
                         placeholder="Email"
                         required
                         value={email}
+                        style={{color: "white"}}
                         onChange={e => setEmail(e.target.value)}
                     />
                     <Button variant="contained" type="submit" className={classes.subscribeBtn}>Subscribe</Button>

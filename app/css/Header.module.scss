@@ -2,12 +2,17 @@
 .listItem svg {
     font-size: 22px !important;
     width: fit-content;
-    color: #39275B;
+    color: rgb(255, 255, 255);
     text-decoration: none !important;
 }
 
 .listItem {
     margin: 20px;
+    
+
+    span{
+        font-size: 24px;
+    }
 }
 
 .listItem svg {
@@ -21,7 +26,8 @@
 }
 
 .containerHeader {
-    background: #EFEEFC;
+    
+    background: rgb(133, 103, 180) ;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -38,7 +44,7 @@
 }
 
 .title a {
-    color: #39275B;
+    color: white;
     width: fit-content;
     margin-left: 20px;
     font-size: 20px;
@@ -63,9 +69,11 @@
     margin-left: auto;
     margin-right: 20px;
     cursor: pointer;
+    
 
     svg {
         font-size: 50px !important;
+        fill: white;
     }
 }
 
@@ -84,7 +92,7 @@
         gap: 20px;
 
         .icon {
-            color: #39275B;
+            color: white;
             cursor: pointer;
         }
 
