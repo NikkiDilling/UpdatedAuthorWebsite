@@ -94,6 +94,19 @@ export default function ProjectSunsetPage() {
               </div>
 
             </div>
+             <div className={classes.statusContainer}>
+              <CircularProgress
+                enableTrackSlot
+                variant="determinate"
+                value={1}
+                aria-label="Export data"
+              />
+              <div>
+                <div>Book 3 status:</div>
+                <div>Plotting</div>
+              </div>
+
+            </div>
 
           </div>
 
