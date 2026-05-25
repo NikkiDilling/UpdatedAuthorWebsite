@@ -26,7 +26,7 @@ export default function RootLayout({
         <header>
           <Header />
           <Notification
-            visible={true}
+            visible={false}
             message="Join the Cover Reveal Team! Singups close May 23rd."
             link="https://forms.gle/yDd6ZwfEWrzMdbC28"
             linkTitle="Singup here"

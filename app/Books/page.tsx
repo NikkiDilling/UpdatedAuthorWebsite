@@ -19,7 +19,7 @@ export default function ProjectSunsetPage() {
             <h2 className={classes.intro}>
               <div>Enter a world of elves, elemental spirits and delicious villains!</div>
               <br />
-              <div>Start the Elven Wastelands series with book 1: <span className={classes.bookTitle}>Prisoner of Magnolia</span> .</div>
+              <div>Start the journey with book 1: <span className={classes.bookTitle}>Prisoner of Magnolia</span> .</div>
 
             </h2>
 
@@ -65,8 +65,8 @@ export default function ProjectSunsetPage() {
           <Image src={divider} className={classes.divider} alt="divider" />
 
           <div className={classes.textContainer}>
-            <h2 style={{ textAlign: "center" }}> Elven Wastelands series</h2>
-            <div className={classes.text}> Elven Wastelands is an ongoing series, with the first book being <span className={classes.bookTitle}>Prisoner of Magnolia</span>, set to release in summer of 2026.</div>
+            <h2 style={{ textAlign: "center" }}> Prisoner of Magnolia series</h2>
+            <div className={classes.text}> Prisoner of Magnolia is an ongoing series, with the first book being <span className={classes.bookTitle}>Prisoner of Magnolia</span>, set to release August 18th 2026.</div>
 
             <div className={classes.statusContainer}>
               <CircularProgress
