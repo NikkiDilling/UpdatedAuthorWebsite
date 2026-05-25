@@ -72,12 +72,12 @@ export default function ProjectSunsetPage() {
               <CircularProgress
                 enableTrackSlot
                 variant="determinate"
-                value={75}
+                value={85}
                 aria-label="Export data"
               />
               <div>
                 <div>Book 1 status:</div>
-                <div>Draft 4 (Editing)</div>
+                <div>Copy Edits</div>
               </div>
 
             </div>
