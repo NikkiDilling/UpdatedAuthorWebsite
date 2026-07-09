@@ -5,6 +5,7 @@ import divider from "../public/assets/divider.webp";
 import pfp from "../public/assets/pfp.gif";
 import Elayah from "../public/assets/Elayah half-body(transparent).png";
 import Image from 'next/image';
+import bookcover from "../public/assets/ebook-cover-crop.webp";
 
 export default function Home() {
   return (
@@ -37,14 +38,19 @@ export default function Home() {
           <Image src={divider} className={classes.divider} alt='divider' />
 
           <div className={classes.section} style={{ textAlign: "center" }}>
+
             <div className={classes.sectionContent}>
               <h3>Prisoner of Magnolia</h3>
               <div>
+
                 <div>Prisoner of Magnolia the first book in my debut romantasy series, set in a dying elven world... </div>
               </div>
               <Link href='/Books' className={classes.readMoreBtn}>Read more</Link>
+
             </div>
+
           </div>
+
         </div>
 
 
@@ -62,7 +68,7 @@ export default function Home() {
             {/* <h4>Recent blog posts</h4> */}
             <div>
               {/* Blog posts will go here */}
-              <Image src={Elayah}  alt='Elayah' style={{height:"55vh", borderBottom: "1px solid purple", borderRadius: "280px",  objectFit: "contain", transform: "scaleX(-1)"}} />
+              <Image src={bookcover} alt='book cover' style={{ height: "55vh", objectFit: "contain" }} />
             </div>
 
           </div>

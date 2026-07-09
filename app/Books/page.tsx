@@ -1,5 +1,6 @@
 import classes from '../css/ProjectSunset.module.scss';
 import banner from "../../public/assets/Elven Wastelands.png";
+import bookcover from "../../public/assets/ebook-cover-crop.webp";
 import map from "../../public/assets/world map.webp";
 import divider from "../../public/assets/divider.webp";
 import Image from 'next/image';
@@ -12,8 +13,6 @@ export default function ProjectSunsetPage() {
       <main>
         <div>
 
-
-
           <div className={classes.textContainer}>
 
             <h2 className={classes.intro}>
@@ -23,25 +22,25 @@ export default function ProjectSunsetPage() {
 
             </h2>
 
-
+            <Image
+              src={bookcover}
+              alt="book cover"
+            />
 
             <h3 style={{ margin: "20px auto" }}>Synopsis</h3>
             <div className={classes.text}>
-              Something had been clawing at the back of Elayah’s mind.
+              The elven realm of Gaudelir hasn’t known war for a century since a fire spirit ripped the continent in two. But the balance of power changes the day of Princess Elayah’s elemental ceremony.
             </div>
             <div className={classes.text}>
-              As the heir to the throne of Elria, she was just supposed to retrieve her elemental power. In and out. Quick. But in her trip to her subconsciousness, the elemental power wasn't the only thing she brought back to a throne room full of watchful eyes. One of those gazes belonged to an old enemy from the north.
-            </div>
-
-            <div className={classes.text}>
-              What was supposed to be a cheerful celebration turned into the re-engulfed flames of the last war as the northern king threatened her kingdom. She’d hoped it was just an intimidation tactic, but when they invaded she lost everything.
+              Elayah Lorethain has never had any aptitude for magic. When she is expected to venture into her subconscious to retrieve her elemental power, she is convinced she will fail. But when she returns, her power isn’t the only thing she brings back.
             </div>
 
             <div className={classes.text}>
-              Her parents were dead, Tayrem captured and herself wed against her will, used as a pawn in Prince Rayn’s hands. Rayn has his own agenda for Elayah and Tayrem, one of trials and revenge. But even he couldn’t guess the outcome of his games…
+              A darkness follows her, filling her mind with vicious whispers and trying to claw its way out. Elayah is weak. Naive. She isn't ready to rule and that's why her parents are still hiding things from her in the archive beneath the palace. And with tensions brewing between her and her childhood best friend and guard—Tayrem—she’s torn between duty and love.
             </div>
+
             <div className={classes.text}>
-              Trapped in an impossible situation, Elayah’s world crumbles down brick by brick as her captor unveils the secrets she’d been blind to all her life. Will she succumb to the darkness and give up, or will she save Tayrem and fight, defeating the odds against her?
+              When the enemy kingdom invades, and Tayrem’s life is on the line, there is only one way she can save him. Forced to marry the enemy king, Elayah has to face the darkness within herself, the secrets of her kingdom, and the desires of her heart that she's been pushing down for decades.
             </div>
           </div>
 
@@ -72,7 +71,7 @@ export default function ProjectSunsetPage() {
               <CircularProgress
                 enableTrackSlot
                 variant="determinate"
-                value={85}
+                value={90}
                 aria-label="Export data"
               />
               <div>
@@ -94,7 +93,7 @@ export default function ProjectSunsetPage() {
               </div>
 
             </div>
-             <div className={classes.statusContainer}>
+            <div className={classes.statusContainer}>
               <CircularProgress
                 enableTrackSlot
                 variant="determinate"
@@ -115,8 +114,6 @@ export default function ProjectSunsetPage() {
         </div>
 
       </main>
-
-
 
     </div>
   );
