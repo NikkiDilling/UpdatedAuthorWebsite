@@ -58,7 +58,7 @@ export default function Header() {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        {['Books', 'Blog', 'Art', 'About Author', 'Contact'].map((text) => (
+        {['Books', 'Art', 'About Author', 'Contact'].map((text) => (
           <Link href={text.indexOf('About') >= 0 ? "About" : text} key={text} className={classes.listItem}>
             <ListItem disablePadding >
 
