@@ -1,7 +1,8 @@
 import classes from '../css/ProjectSunset.module.scss';
 import banner from "../../public/assets/Elven Wastelands.png";
 import bookcover from "../../public/assets/ebook-cover-crop.webp";
-import map from "../../public/assets/world map.webp";
+//import map from "../../public/assets/world map.webp";
+import mapOfficial from "../../public/assets/Gaudelir-map.webp";
 import divider from "../../public/assets/divider.webp";
 import Image from 'next/image';
 import { CircularProgress } from '@mui/material';
@@ -52,11 +53,11 @@ export default function ProjectSunsetPage() {
           <div>
             <Image
               className={classes.map}
-              src={map}
+              src={mapOfficial}
               alt="World Map"
               loading="lazy"
             />
-            <div style={{ textAlign: "center" }}>Map (unofficial)</div>
+            <div style={{ textAlign: "center" }}>Map of Gaudelir</div>
           </div>
 
 
@@ -71,12 +72,12 @@ export default function ProjectSunsetPage() {
               <CircularProgress
                 enableTrackSlot
                 variant="determinate"
-                value={90}
+                value={98}
                 aria-label="Export data"
               />
               <div>
                 <div>Book 1 status:</div>
-                <div>Copy Edits</div>
+                <div>Formatting</div>
               </div>
 
             </div>
