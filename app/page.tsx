@@ -45,7 +45,7 @@ export default function Home() {
 
                 <div>Prisoner of Magnolia the first book in my debut romantasy series, set in a dying elven world... </div>
               </div>
-              <Link href='/Books' className={classes.readMoreBtn}>Read more</Link>
+              <Link href='/books' className={classes.readMoreBtn}>Read more</Link>
 
             </div>
 

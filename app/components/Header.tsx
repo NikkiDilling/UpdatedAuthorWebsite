@@ -35,7 +35,7 @@ export default function Header() {
 
   const getBurgerMenuIcon = (text: string) => {
     switch (text) {
-      case 'Books':
+      case 'books':
         return <MenuBookIcon />;
       case 'Blog':
         return <MailIcon />;
