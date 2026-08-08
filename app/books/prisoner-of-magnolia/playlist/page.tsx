@@ -44,9 +44,6 @@ export default function PrisonerOfMagnoliaPlaylist() {
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                         loading="lazy"
                     ></iframe>
-                </div>
-                <div>
-                    <h3>CHAPTER FOUR</h3>
                     <iframe
                         title="Chapter 4 player"
                         className={pomStyles.responsiveIframe}
@@ -57,6 +54,9 @@ export default function PrisonerOfMagnoliaPlaylist() {
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                         loading="lazy"
                     ></iframe>
+                </div>
+                <div>
+                    <h3>CHAPTER FOUR</h3>
                     <iframe
                         title="Chapter 4 player"
                         className={pomStyles.responsiveIframe}
