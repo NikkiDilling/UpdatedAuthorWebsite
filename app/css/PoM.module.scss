@@ -23,3 +23,23 @@
     scale: 1.03;
     transition: all 0.8s ease-in-out;
 }
+
+/* Responsive iframe used by playlist pages */
+.responsiveIframe{
+    width:100%;
+    max-width:900px;
+    border:0;
+    margin:0 auto;
+    display:block;
+}
+
+.playlist{
+    h3{
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 768px){
+    .responsiveIframe{
+        width:70%;
+    }
+}
