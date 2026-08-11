@@ -126,7 +126,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                         title="Chapter 9 player"
                         className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
-                        src=""
+                        src="https://open.spotify.com/embed/track/3F7agYY9bN4Xt6HdqyWmh8?utm_source=generator&si=5b5598ef655c417c"
                         height="152"
                         frameBorder="0"
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -137,9 +137,9 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     <h3>CHAPTER TEN</h3>
                     <iframe
                         title="Chapter 10 player"
-                        style={{ margin: "0 auto" }}
+                        className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
-                        src=""
+                        src="https://open.spotify.com/embed/track/39pPRdUFnsW078w69E4yiF?utm_source=generator&si=ae329b3c2d644e86"
                         width="70%"
                         height="152"
                         frameBorder="0"
@@ -151,9 +151,9 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     <h3>CHAPTER ELEVEN</h3>
                     <iframe
                         title="Chapter 11 player"
-                        style={{ margin: "0 auto" }}
+                        className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
-                        src=""
+                        src="https://open.spotify.com/embed/track/110XRYFu7ZevFq24IVXsOU?utm_source=generator&si=b122828324cc409b"
                         width="70%"
                         height="152"
                         frameBorder="0"
@@ -165,7 +165,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     <h3>CHAPTER TWELVE</h3>
                     <iframe
                         title="Chapter 12 player"
-                        style={{ margin: "0 auto" }}
+                        className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
                         src=""
                         width="70%"
@@ -179,7 +179,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     <h3>CHAPTER THIRTEEN</h3>
                     <iframe
                         title="Chapter 13 player"
-                        style={{ margin: "0 auto" }}
+                        className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
                         src=""
                         width="70%"
@@ -193,7 +193,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     <h3>CHAPTER FOURTEEN</h3>
                     <iframe
                         title="Chapter 14 player"
-                        style={{ margin: "0 auto" }}
+                        className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
                         src=""
                         width="70%"
@@ -207,7 +207,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     <h3>CHAPTER FIFTEEN</h3>
                     <iframe
                         title="Chapter 15 player"
-                        style={{ margin: "0 auto" }}
+                        className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
                         src=""
                         width="70%"
@@ -221,9 +221,9 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     <h3>CHAPTER SIXTEEN</h3>
                     <iframe
                         title="Chapter 16 player"
-                        style={{ margin: "0 auto" }}
+                        className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
-                        src=""
+                        src="https://open.spotify.com/embed/track/4mHCMpa4hBHz16YhmE5NpE?utm_source=generator&si=4fbb180db1874e8c"
                         width="70%"
                         height="152"
                         frameBorder="0"
@@ -235,7 +235,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     <h3>CHAPTER SEVENTEEN</h3>
                     <iframe
                         title="Chapter 17 player"
-                        style={{ margin: "0 auto" }}
+                        className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
                         src=""
                         width="70%"
@@ -249,7 +249,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     <h3>CHAPTER EIGHTEEN</h3>
                     <iframe
                         title="Chapter 18 player"
-                        style={{ margin: "0 auto" }}
+                        className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
                         src=""
                         width="70%"
@@ -263,7 +263,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     <h3>CHAPTER NINETEEN</h3>
                     <iframe
                         title="Chapter 19 player"
-                        style={{ margin: "0 auto" }}
+                        className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
                         src=""
                         width="70%"
@@ -277,7 +277,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     <h3>CHAPTER TWENTY</h3>
                     <iframe
                         title="Chapter 20 player"
-                        style={{ margin: "0 auto" }}
+                        className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
                         src=""
                         width="70%"
@@ -291,7 +291,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     <h3>CHAPTER TWENTY-ONE</h3>
                     <iframe
                         title="Chapter 21 player"
-                        style={{ margin: "0 auto" }}
+                        className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
                         src=""
                         width="70%"
@@ -305,9 +305,9 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     <h3>CHAPTER TWENTY-TWO</h3>
                     <iframe
                         title="Chapter 22 player"
-                        style={{ margin: "0 auto" }}
+                        className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
-                        src=""
+                        src="https://open.spotify.com/embed/track/7M3NgNpRVeCjrj0hIYCdX4?utm_source=generator&si=71196a9eb429446e"
                         width="70%"
                         height="152"
                         frameBorder="0"
@@ -319,9 +319,20 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     <h3>CHAPTER TWENTY-THREE</h3>
                     <iframe
                         title="Chapter 23 player"
-                        style={{ margin: "0 auto" }}
+                        className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
-                        src=""
+                        src="https://open.spotify.com/embed/track/1sXIJoe3ghX236aCZT5P0n?utm_source=generator&si=4a3a68cf962d4923"
+                        width="70%"
+                        height="152"
+                        frameBorder="0"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                    ></iframe>
+                    <iframe
+                        title="Chapter 23 player"
+                        className={pomStyles.responsiveIframe}
+                        data-testid="embed-iframe"
+                        src="https://open.spotify.com/embed/track/5QANrRucwudemMzx5kXlUM?utm_source=generator&si=6a505e32c1f740d3"
                         width="70%"
                         height="152"
                         frameBorder="0"

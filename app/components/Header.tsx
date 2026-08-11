@@ -106,7 +106,7 @@ export default function Header() {
         </div>
 
         <div className={classes.icons}>
-          <a href='https://www.goodreads.com/user/show/176510995-nicole' target='_blank'>
+          <a href='https://www.goodreads.com/author/show/71293043.Nicole_D_Hansen' target='_blank'>
             <FontAwesomeIcon
               icon={faGoodreads}
               className={classes.icon}

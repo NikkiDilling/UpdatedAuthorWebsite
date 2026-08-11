@@ -1,5 +1,4 @@
-
-.btnContainer{
+.btnContainer {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -8,7 +7,7 @@
     margin: 0 auto;
 }
 
-.btn{
+.btn {
     margin-top: 15px;
     width: fit-content;
     padding: 10px 15px;
@@ -25,21 +24,42 @@
 }
 
 /* Responsive iframe used by playlist pages */
-.responsiveIframe{
-    width:100%;
-    max-width:900px;
-    border:0;
-    margin:0 auto;
-    display:block;
+.responsiveIframe {
+    width: 100%;
+    max-width: 900px;
+    border: 0;
+    margin: 10px auto;
+    display: block;
 }
 
-.playlist{
-    h3{
+.dictionaryContainer {
+    display: "flex";
+    flex-direction: "column";
+    width: 90%;
+    margin: 30px auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.dictionaryItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 3px dotted #ccc;
+}
+
+.playlist {
+    h3 {
         font-size: 1.5rem;
     }
 }
-@media (min-width: 768px){
-    .responsiveIframe{
-        width:70%;
+
+@media (min-width: 768px) {
+    .responsiveIframe {
+        width: 70%;
     }
 }

@@ -1,14 +1,21 @@
 import dictionary from './dictionary.json';
+import classes from './../../../css/PoM.module.scss';
 
 export default function DictionaryPage() {
 
+    
     return (
-        <div style={{ display: "flex", flexDirection: "column", width: "90%", margin: "30px auto", justifyContent: "center", alignItems: "center", fontSize: "22px", padding: "0 20px" }}>
+        <div className={classes.dictionaryContainer} >
 
             <h3>Demutriir Dictionary</h3>
 
-            <div>
-                
+            <div style={{width:"60%", margin:"0 auto"}}>
+                {Object.keys(dictionary).sort().map((key, index) => (
+                    <div key={index} className={classes.dictionaryItem}>
+                        <div>{key}</div>
+                        <div>{dictionary[key]}</div>
+                    </div>
+                ))}
             </div>
         </div>
     )

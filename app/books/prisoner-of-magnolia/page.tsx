@@ -10,8 +10,8 @@ export default function PrisonerOfMagnoliaPage() {
             {/* this page has neat buttons that show playlist, dictionary etc. */}
             <div className={classes.btnContainer}>
                 <Link href='/books/prisoner-of-magnolia/playlist' className={classes.btn} >Book Playlist</Link>
-                <Link href='/About' className={classes.btn} >Pronunciation Guide</Link>
-                <Link href='/About' className={classes.btn} >Demutriir Dictionary</Link>
+                <Link href='/books/prisoner-of-magnolia/pronunciation-guide' className={classes.btn} >Pronunciation Guide</Link>
+                <Link href='/books/prisoner-of-magnolia/dictionary' className={classes.btn} >Demutriir Dictionary</Link>
             </div>
 
         </div>
