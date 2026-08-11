@@ -87,7 +87,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                         title="Chapter 6 player"
                         className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
-                        src=""
+                        src="https://open.spotify.com/embed/track/2nGUOWOQlasO87i1wprY6T?utm_source=generator&si=4de9d2b036164198"
                         height="152"
                         frameBorder="0"
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -195,7 +195,18 @@ export default function PrisonerOfMagnoliaPlaylist() {
                         title="Chapter 14 player"
                         className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
-                        src=""
+                        src="https://open.spotify.com/embed/track/0d23jazTOtlCCmNrTO9WIG?utm_source=generator&si=01ca57c8c6984d21"
+                        width="70%"
+                        height="152"
+                        frameBorder="0"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                    ></iframe>
+                    <iframe
+                        title="Chapter 14 player"
+                        className={pomStyles.responsiveIframe}
+                        data-testid="embed-iframe"
+                        src="https://open.spotify.com/embed/track/0LLhXDW4rqJehmII52vSHE?utm_source=generator&si=84c7f4d5caaa4f61"
                         width="70%"
                         height="152"
                         frameBorder="0"
@@ -237,7 +248,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                         title="Chapter 17 player"
                         className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
-                        src=""
+                        src="https://open.spotify.com/embed/track/5j4hgym3SUadjFieaAIVw0?utm_source=generator&si=b0b7e9df4edc4b9a"
                         width="70%"
                         height="152"
                         frameBorder="0"
@@ -279,7 +290,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                         title="Chapter 20 player"
                         className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
-                        src=""
+                        src="https://open.spotify.com/embed/track/1ZbzOXEYMJNT1zxqLHyCfA?utm_source=generator&si=feef97ed11564403"
                         width="70%"
                         height="152"
                         frameBorder="0"
