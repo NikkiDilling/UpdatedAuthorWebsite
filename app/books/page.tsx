@@ -71,8 +71,6 @@ export default function ProjectSunsetPage() {
           <Image src={divider} className={classes.divider} alt="divider" />
 
           <div className={classes.textContainer}>
-            <h2 style={{ textAlign: "center" }}> Prisoner of Magnolia series</h2>
-            <div className={classes.text}> Prisoner of Magnolia is an ongoing series, with the first book being <span className={classes.bookTitle}>Prisoner of Magnolia</span>, set to release August 18th 2026.</div>
 
             <div className={classes.statusContainer}>
               <CircularProgress
