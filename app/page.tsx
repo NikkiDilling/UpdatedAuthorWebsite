@@ -3,9 +3,8 @@ import classes from './css/MainPage.module.scss';
 import NewsletterForm from './components/NewsLetterForm';
 import divider from "../public/assets/divider.webp";
 import pfp from "../public/assets/pfp.gif";
-import Elayah from "../public/assets/Elayah half-body(transparent).png";
 import Image from 'next/image';
-import bookcover from "../public/assets/ebook-cover-crop.webp";
+import bookcover from "../public/assets/ebook cover.webp";
 
 export default function Home() {
   return (
@@ -61,6 +60,9 @@ export default function Home() {
             <p className={classes.mobileView}>Sign up for my newsletter and be the first to get book updates, writing tips, exclusive content, deals and so much more!</p>
 
             <NewsletterForm />
+
+            <Image src={bookcover} alt='book cover' style={{ height: "55vh", objectFit: "contain" }} />
+
           </div>
 
           <div >
@@ -68,7 +70,6 @@ export default function Home() {
             {/* <h4>Recent blog posts</h4> */}
             <div>
               {/* Blog posts will go here */}
-              <Image src={bookcover} alt='book cover' style={{ height: "55vh", objectFit: "contain" }} />
             </div>
 
           </div>

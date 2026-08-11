@@ -8,6 +8,7 @@ import firstMeeting from '../../public/assets/first meeting.webp';
 import tayremChained from '../../public/assets/Tayrem-chained.webp';
 import elayah from '../../public/assets/Elayah-final.webp';
 import elayahNrayn from '../../public/assets/Elayah&Rayn.webp';
+import alexCom from '../../public/assets/AlexCom.webp';
 import invasionTnE from '../../public/assets/CommissionNicole.webp';
 import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -30,6 +31,12 @@ export default function ArtPage() {
     }
 
     const itemData = [
+        {
+            img: alexCom,
+            title: 'Elayah & Tayrem',
+            author: 'Alexandrina A.M.',
+            ig: "https://www.instagram.com/alexandrina_am"
+        },
         {
             img: invasionTnE,
             title: 'Invasion',
