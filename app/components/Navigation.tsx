@@ -7,8 +7,8 @@ export default function Navigation() {
         <div className={classes.container}>
             <Link href="/books">Books</Link >
   {/*           <Link href="/Blog" >Blog</Link > */}
-            <Link href="/Art">Art</Link >
-            <Link href="/About">About</Link >
+            <Link href="/art">Art</Link >
+            <Link href="/about">About</Link >
             <Link href="/Contact">Contact</Link >
         </div>
     );
