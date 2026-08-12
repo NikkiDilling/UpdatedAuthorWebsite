@@ -42,7 +42,7 @@ export default function Home() {
                 <div className={classes.text}>Hi! My name is Nicole. I write delicious slow burn romantasy with redeamable villains and plot-lines that will heal your inner child. </div>
                 <div className={classes.text}>I also daylight as a software developer. </div>
               </div>
-              <Link href='/About' className={classes.readMoreBtn} >Learn more about me</Link>
+              <Link href='/about' className={classes.readMoreBtn} >Learn more about me</Link>
             </div>
 
           </div>
