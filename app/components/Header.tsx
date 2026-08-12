@@ -37,8 +37,8 @@ export default function Header() {
     switch (text) {
       case 'books':
         return <MenuBookIcon />;
-      case 'Blog':
-        return <MailIcon />;
+/*       case 'Blog':
+        return <MailIcon />; */
       case 'Art':
         return <ColorLensIcon />;
       case 'About Author':
