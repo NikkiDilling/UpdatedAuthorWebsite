@@ -9,10 +9,10 @@
 
 .btn {
     margin-top: 15px;
-    width: fit-content;
+    width: 90%;
     padding: 10px 15px;
-    background-color: #39275B;
-    color: #ffff;
+    border: 1px solid #39275B;
+    color: #39275B;
     border-radius: 8px;
     cursor: pointer;
     text-decoration: none;
@@ -20,7 +20,9 @@
 
 .btn:hover {
     scale: 1.03;
-    transition: all 0.8s ease-in-out;
+    color: rgb(231, 14, 134);
+    border-color: rgb(231, 14, 134);;
+    transition: all 0.4s ease-in-out;
 }
 
 /* Responsive iframe used by playlist pages */
@@ -63,5 +65,9 @@
 @media (min-width: 768px) {
     .responsiveIframe {
         width: 70%;
+    }
+
+    .btn {
+        width: 30%;
     }
 }

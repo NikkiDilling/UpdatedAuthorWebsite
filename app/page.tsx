@@ -14,6 +14,26 @@ export default function Home() {
 
         <div className={classes.mainSection}>
 
+
+
+
+          <div className={classes.section + " " + classes.bookIntro} >
+
+            <Image className={classes.bookCover} src={bookcover} alt='book cover' />
+            <div className={classes.sectionContent}>
+              <h3>Prisoner of Magnolia Series</h3>
+              <div>
+                <span>Release Date: August 18th</span>
+                <div>Prisoner of Magnolia the first book in Nicole D. Hansen's debut romantasy series, set in a dying elven world... </div>
+              </div>
+              <Link href='/books' className={classes.readMoreBtn}>Read more</Link>
+
+            </div>
+
+          </div>
+
+          <Image src={divider} className={classes.divider} alt='divider' />
+
           <div className={classes.section}>
 
             <Image src={pfp} alt="profile image" className={classes.pfp} />
@@ -34,21 +54,8 @@ export default function Home() {
             <NewsletterForm />
           </div>
 
-          <Image src={divider} className={classes.divider} alt='divider' />
 
-          <div className={classes.section} style={{ textAlign: "center" }}>
 
-            <div className={classes.sectionContent}>
-              <h3>Prisoner of Magnolia</h3>
-              <div>
-
-                <div>Prisoner of Magnolia the first book in my debut romantasy series, set in a dying elven world... </div>
-              </div>
-              <Link href='/books' className={classes.readMoreBtn}>Read more</Link>
-
-            </div>
-
-          </div>
 
         </div>
 
@@ -56,12 +63,10 @@ export default function Home() {
         <div className={classes.recentPosts}>
 
           <div className={classes.desktopView}>
-            <h2 style={{ paddingTop: "15px" }}>Sign up to my newsletter</h2>
-            <p className={classes.mobileView}>Sign up for my newsletter and be the first to get book updates, writing tips, exclusive content, deals and so much more!</p>
+            <h3 >Nicole's newsletter</h3>
+            <p>Sign up for my newsletter and be the first to get book updates, writing tips, exclusive content, deals and so much more!</p>
 
             <NewsletterForm />
-
-            <Image src={bookcover} alt='book cover' style={{ height: "55vh", objectFit: "contain" }} />
 
           </div>
 
