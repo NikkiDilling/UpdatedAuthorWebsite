@@ -34,12 +34,34 @@
         }
 
         .subtitle {
+            padding: 10px 0;
             font-size: 18px;
             color: rgb(231, 14, 134);
             font-weight: 400;
-            font-style: italic;
         }
 
+        .links {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 40px;
+
+            .link {
+                border: 1px solid rgb(231, 14, 134);
+                font-size: 1.5rem;
+                border-radius: 8px;
+                padding: 10px 15px;
+                margin: 10px 10px;
+                text-decoration: none;
+                color: rgb(231, 14, 134);
+            }
+
+            .link:hover {
+                background-color: rgb(231, 14, 134);
+                color: #ffff;
+                transition: all 0.3s ease-in-out;
+            }
+        }
     }
 
     .statusContainer {
@@ -132,6 +154,14 @@
             margin-right: 20px;
             width: 25% !important;
 
+        }
+
+        .links {
+            flex-direction: row !important;
+
+            .link {
+                margin: 0 10px !important;
+            }
         }
     }
 

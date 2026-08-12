@@ -4,7 +4,7 @@ import bookcover from "../../public/assets/ebook cover.webp";
 import mapOfficial from "../../public/assets/Gaudelir-map.webp";
 import divider from "../../public/assets/divider.webp";
 import Image from 'next/image';
-import { CircularProgress } from '@mui/material';
+import { CircularProgress, Link } from '@mui/material';
 
 export default function ProjectSunsetPage() {
 
@@ -26,7 +26,8 @@ export default function ProjectSunsetPage() {
 
               <div>
                 <div className={classes.title}>Prisoner Of Magnolia Series</div>
-                <div className={classes.subtitle}>Enter a world of elves, elemental spirits and delicious villains!</div>
+                <div>Release Date: August 18th, 2026</div>
+                <div className={classes.subtitle}>Even demons despise the dark</div>
 
                 <div>
                   <div className={classes.text}>
@@ -44,6 +45,11 @@ export default function ProjectSunsetPage() {
                     When the enemy kingdom invades, and Tayrem’s life is on the line, there is only one way she can save him. Forced to marry the enemy king, Elayah has to face the darkness within herself, the secrets of her kingdom, and the desires of her heart that she's been pushing down for decades.
                   </div>
                 </div>
+
+                <div className={classes.links}>
+                  <Link target="_blank" className={classes.link} href="https://www.amazon.com/Prisoner-Magnolia-Nicole-D-Hansen-ebook/dp/B0H968RDHJ">Amazon</Link>
+                  <Link target="_blank" className={classes.link} href="https://www.goodreads.com/book/show/255533234-prisoner-of-magnolia">Goodreads</Link>
+                </div>
               </div>
 
 
@@ -52,7 +58,7 @@ export default function ProjectSunsetPage() {
           </div>
 
           <div className={classes.quotes}>
-            <div>"Even demons despise the dark."</div>
+            <div></div>
           </div>
 
           <Image src={divider} className={classes.divider} alt="divider" />
