@@ -60,7 +60,7 @@ export default function Header() {
     >
       <List>
         {['Books', 'Art', 'About', 'Contact'].map((text) => (
-          <Link href={text.indexOf('About') >= 0 ? "About" : text} key={text} className={classes.listItem}>
+          <Link href={text.toLocaleLowerCase()} key={text} className={classes.listItem}>
             <ListItem disablePadding >
 
               <ListItemButton>
@@ -68,7 +68,7 @@ export default function Header() {
                   {getBurgerMenuIcon(text)}
                 </ListItemIcon>
 
-                <ListItemText primary={text.toLocaleLowerCase()} />
+                <ListItemText primary={text} />
 
               </ListItemButton>
 

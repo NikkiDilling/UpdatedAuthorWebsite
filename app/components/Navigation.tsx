@@ -9,7 +9,7 @@ export default function Navigation() {
   {/*           <Link href="/Blog" >Blog</Link > */}
             <Link href="/art">Art</Link >
             <Link href="/about">About</Link >
-            <Link href="/Contact">Contact</Link >
+            <Link href="/contact">Contact</Link >
         </div>
     );
 }
