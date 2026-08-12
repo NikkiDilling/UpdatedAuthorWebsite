@@ -17,8 +17,8 @@
 .bookIntro {
     margin-bottom: 20px;
     display: flex;
-    justify-content: left;
-    text-align: left;
+    justify-content: center;
+    text-align: center;
 
     .bookCover {
         width: 20%;
@@ -157,6 +157,11 @@
                 margin-left: 20px;
             }
         }
+    }
+
+    .bookIntro {
+        justify-content: left;
+        text-align: left;
     }
 
 
