@@ -34,16 +34,17 @@ export default function Header() {
       };
 
   const getBurgerMenuIcon = (text: string) => {
-    switch (text) {
+    const srch = text.toLowerCase();
+    switch (srch) {
       case 'books':
         return <MenuBookIcon />;
 /*       case 'Blog':
         return <MailIcon />; */
-      case 'Art':
+      case 'art':
         return <ColorLensIcon />;
-      case 'About Author':
+      case 'about':
         return <Face3Icon />;
-      case 'Contact':
+      case 'contact':
         return <CallIcon />;
       default:
         return null;
@@ -58,7 +59,7 @@ export default function Header() {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        {['books', 'Art', 'About Author', 'Contact'].map((text) => (
+        {['Books', 'Art', 'About', 'Contact'].map((text) => (
           <Link href={text.indexOf('About') >= 0 ? "About" : text} key={text} className={classes.listItem}>
             <ListItem disablePadding >
 
@@ -67,7 +68,7 @@ export default function Header() {
                   {getBurgerMenuIcon(text)}
                 </ListItemIcon>
 
-                <ListItemText primary={text} />
+                <ListItemText primary={text.toLocaleLowerCase()} />
 
               </ListItemButton>
 
