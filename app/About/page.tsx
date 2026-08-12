@@ -78,18 +78,7 @@ export default function AboutPage() {
       </div>
 
       <Image src={divider} alt="divider" className={classes.divider} />
-
-      <div >
-        <div>My favourite tropes:</div>
-        <ul>
-          <li>Love triangle</li>
-          <li>Slooow Burn</li>
-          <li>Forbidden love</li>
-          <li>Misunderstood villain/ Villain redemption</li>
-        </ul>
-      </div>
-      <Image src={divider} alt="divider" className={classes.divider} />
-
+      
       {/*       <div>
         <div>My favourite books:</div>
         <ul>

@@ -8,7 +8,7 @@ export default function Navigation() {
             <Link href="/books">Books</Link >
   {/*           <Link href="/Blog" >Blog</Link > */}
             <Link href="/Art">Art</Link >
-            <Link href="/About">About Author</Link >
+            <Link href="/About">About</Link >
             <Link href="/Contact">Contact</Link >
         </div>
     );
