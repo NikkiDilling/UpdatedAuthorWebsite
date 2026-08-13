@@ -1,5 +1,5 @@
 import classes from '../css/ProjectSunset.module.scss';
-import bookcover from "../../public/assets/ebook cover.webp";
+import bookcover from "../../public/assets/PoM front cover.webp";
 //import map from "../../public/assets/world map.webp";
 import mapOfficial from "../../public/assets/Gaudelir-map.webp";
 import divider from "../../public/assets/divider.webp";
