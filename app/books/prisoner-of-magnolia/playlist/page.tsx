@@ -389,7 +389,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     <h3 className={pomStyles.subtitle}>CHAPTER TWENTY-FOUR</h3>
                     <iframe
                         title="Chapter 24 player"
-                        style={{ margin: "0 auto" }}
+                        className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
                         src="https://open.spotify.com/embed/track/0vza2CsUtpjydQVV2E4TOm?utm_source=generator&si=bf0ecdc45c6648b0"
                         width="70%"
@@ -403,7 +403,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     <h3 className={pomStyles.subtitle}>CHAPTER TWENTY-FIVE</h3>
                     <iframe
                         title="Chapter 25 player"
-                        style={{ margin: "0 auto" }}
+                        className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
                         src="https://open.spotify.com/embed/track/16w8ZGVSjI4TlTLV8VimBY?utm_source=generator&si=c7061bade58444de"
                         width="70%"
@@ -417,7 +417,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     <h3 className={pomStyles.subtitle}>CHAPTER TWENTY-SIX</h3>
                     <iframe
                         title="Chapter 26 player"
-                        style={{ margin: "0 auto" }}
+                        className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
                         src=""
                         width="70%"
@@ -431,7 +431,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     <h3 className={pomStyles.subtitle}>CHAPTER TWENTY-SEVEN</h3>
                     <iframe
                         title="Chapter 27 player"
-                        style={{ margin: "0 auto" }}
+                        className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
                         src="https://open.spotify.com/embed/track/29fc1RinBg7npe9NtS4yDO?utm_source=generator&si=df686ee56e7048ac"
                         width="70%"
@@ -445,7 +445,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     <h3 className={pomStyles.subtitle}>CHAPTER TWENTY-EIGHT</h3>
                     <iframe
                         title="Chapter 28 player"
-                        style={{ margin: "0 auto" }}
+                        className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
                         src="https://open.spotify.com/embed/track/5xvjnyg8FHPGRSkbAhjJh6?utm_source=generator&si=af45f779d6794aff"
                         width="70%"
@@ -459,7 +459,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     <h3 className={pomStyles.subtitle}>CHAPTER TWENTY-NINE</h3>
                     <iframe
                         title="Chapter 29 player"
-                        style={{ margin: "0 auto" }}
+                        className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
                         src="https://open.spotify.com/embed/track/30dDwQwrqdz8jfOIkq5Rx0?utm_source=generator&si=218c132c45794cfb"
                         width="70%"
@@ -473,7 +473,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     <h3 className={pomStyles.subtitle}>CHAPTER THIRTY</h3>
                     <iframe
                         title="Chapter 30 player"
-                        style={{ margin: "0 auto" }}
+                        className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
                         src=""
                         width="70%"
@@ -487,7 +487,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     <h3 className={pomStyles.subtitle}>CHAPTER THIRTY-ONE</h3>
                     <iframe
                         title="Chapter 31 player"
-                        style={{ margin: "0 auto" }}
+                        className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
                         src=""
                         width="70%"
@@ -501,7 +501,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     <h3 className={pomStyles.subtitle}>CHAPTER THIRTY-TWO</h3>
                     <iframe
                         title="Chapter 32 player"
-                        style={{ margin: "0 auto" }}
+                        className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
                         src=""
                         width="70%"
@@ -515,7 +515,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     <h3 className={pomStyles.subtitle}>CHAPTER THIRTY-THREE</h3>
                     <iframe
                         title="Chapter 33 player"
-                        style={{ margin: "0 auto" }}
+                        className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
                         src="https://open.spotify.com/embed/track/4rk8o7SUTcTdVWWQErdTeO?utm_source=generator&si=9fa7b3aa30f24801"
                         width="70%"
@@ -529,7 +529,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     <h3 className={pomStyles.subtitle}>CHAPTER THIRTY-FOUR</h3>
                     <iframe
                         title="Chapter 34 player"
-                        style={{ margin: "0 auto" }}
+                        className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
                         src="https://open.spotify.com/embed/track/2GZeUGXi4JL3gDgUdB2XSg?utm_source=generator&si=59e79be55c2d49df"
                         width="70%"
