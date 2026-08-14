@@ -12,6 +12,8 @@ import alexCom from '../../public/assets/AlexCom.webp';
 import invasionTnE from '../../public/assets/CommissionNicole.webp';
 import { Navigation, Autoplay} from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import 'swiper/swiper-bundle.css';
 import ImagePopUp from '../components/ImagePopUp';
 import { useState } from 'react';
