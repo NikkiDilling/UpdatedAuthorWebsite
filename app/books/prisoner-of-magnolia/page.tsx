@@ -24,10 +24,10 @@ export default function PrisonerOfMagnoliaPage() {
                 <Link href='/books/prisoner-of-magnolia/pronunciation-guide' className={classes.btn} >Pronunciation Guide</Link>
                 <Link href='/books/prisoner-of-magnolia/dictionary' className={classes.btn} >Demutriir Dictionary</Link>
 
-                <Image src={divider} alt="divider" style={{ maxWidth: "20%", height: "auto", margin: "40px auto" }} />
+                <Image src={divider} alt="divider" className={classes.divider} />
+
                 <div style={{ marginBottom: "40px" }}>
                     <Image
-                        style={{ maxWidth: "40%", height: "auto", margin: "20px auto", cursor: "pointer" }}
                         className={classes.map}
                         src={mapOfficial}
                         alt="World Map"

@@ -52,6 +52,7 @@
     width: 90%;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 
     p {
         font-size: 0.8rem;
@@ -78,9 +79,24 @@
     }
 }
 
+.divider {
+    display: block;
+    margin: 40px auto !important;
+    width: 250px !important;
+}
 
+.map {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    cursor: pointer;
+}
 
 @media (min-width: 768px) {
+    .map {
+        width: 40% !important;
+    }
+
     .responsiveIframe {
         width: 70%;
     }

@@ -4,10 +4,10 @@ import pomStyles from '../../../css/PoM.module.scss'
 export default function PrisonerOfMagnoliaPlaylist() {
     return (
         <div className={pomStyles.playlist} style={{ textAlign: "center", padding: "2rem" }}>
-            <h1>Prisoner of Magnolia Playlist</h1>
+            <h1 className={pomStyles.title}>Prisoner of Magnolia Playlist</h1>
             <div style={{ display: "grid", gap: "1.5rem", maxWidth: "900px", margin: "0 auto" }}>
                 <div>
-                    <h3>CHAPTER ONE</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER ONE</h3>
                     <iframe
                         title="Chapter 1 player"
                         className={pomStyles.responsiveIframe}
@@ -20,7 +20,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER TWO</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER TWO</h3>
                     <iframe
                         title="Chapter 2 player"
                         className={pomStyles.responsiveIframe}
@@ -33,7 +33,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER THREE</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER THREE</h3>
                     <iframe
                         title="Chapter 3 player"
                         className={pomStyles.responsiveIframe}
@@ -56,7 +56,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER FOUR</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER FOUR</h3>
                     <iframe
                         title="Chapter 4 player"
                         className={pomStyles.responsiveIframe}
@@ -70,7 +70,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                 </div>
                 
                 <div>
-                    <h3>CHAPTER FIVE</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER FIVE</h3>
                     <iframe
                         title="Chapter 5 player"
                         className={pomStyles.responsiveIframe}
@@ -83,7 +83,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER SIX</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER SIX</h3>
                     <iframe
                         title="Chapter 6 player"
                         className={pomStyles.responsiveIframe}
@@ -96,7 +96,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER SEVEN</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER SEVEN</h3>
                     <iframe
                         title="Chapter 7 player"
                         className={pomStyles.responsiveIframe}
@@ -109,7 +109,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER EIGHT</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER EIGHT</h3>
                     <iframe
                         title="Chapter 8 player"
                         className={pomStyles.responsiveIframe}
@@ -122,7 +122,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER NINE</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER NINE</h3>
                     <iframe
                         title="Chapter 9 player"
                         className={pomStyles.responsiveIframe}
@@ -135,7 +135,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER TEN</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER TEN</h3>
                     <iframe
                         title="Chapter 10 player"
                         className={pomStyles.responsiveIframe}
@@ -149,7 +149,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER ELEVEN</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER ELEVEN</h3>
                     <iframe
                         title="Chapter 11 player"
                         className={pomStyles.responsiveIframe}
@@ -163,7 +163,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER TWELVE</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER TWELVE</h3>
                     <iframe
                         title="Chapter 12 player"
                         className={pomStyles.responsiveIframe}
@@ -177,7 +177,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER THIRTEEN</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER THIRTEEN</h3>
                     <iframe
                         title="Chapter 13 player"
                         className={pomStyles.responsiveIframe}
@@ -191,7 +191,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER FOURTEEN</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER FOURTEEN</h3>
                     <iframe
                         title="Chapter 14 player"
                         className={pomStyles.responsiveIframe}
@@ -216,7 +216,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER FIFTEEN</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER FIFTEEN</h3>
                     <iframe
                         title="Chapter 15 player"
                         className={pomStyles.responsiveIframe}
@@ -230,7 +230,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER SIXTEEN</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER SIXTEEN</h3>
                     <iframe
                         title="Chapter 16 player"
                         className={pomStyles.responsiveIframe}
@@ -244,7 +244,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER SEVENTEEN</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER SEVENTEEN</h3>
                     <iframe
                         title="Chapter 17 player"
                         className={pomStyles.responsiveIframe}
@@ -258,7 +258,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER EIGHTEEN</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER EIGHTEEN</h3>
                     <iframe
                         title="Chapter 18 player"
                         className={pomStyles.responsiveIframe}
@@ -272,7 +272,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER NINETEEN</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER NINETEEN</h3>
                     <iframe
                         title="Chapter 19 player"
                         className={pomStyles.responsiveIframe}
@@ -286,7 +286,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER TWENTY</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER TWENTY</h3>
                     <iframe
                         title="Chapter 20 player"
                         className={pomStyles.responsiveIframe}
@@ -300,7 +300,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER TWENTY-ONE</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER TWENTY-ONE</h3>
                     <iframe
                         title="Chapter 21 player"
                         className={pomStyles.responsiveIframe}
@@ -314,7 +314,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER TWENTY-TWO</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER TWENTY-TWO</h3>
                     <iframe
                         title="Chapter 22 player"
                         className={pomStyles.responsiveIframe}
@@ -328,7 +328,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER TWENTY-THREE</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER TWENTY-THREE</h3>
                     <iframe
                         title="Chapter 23 player"
                         className={pomStyles.responsiveIframe}
@@ -353,7 +353,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER TWENTY-FOUR</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER TWENTY-FOUR</h3>
                     <iframe
                         title="Chapter 24 player"
                         style={{ margin: "0 auto" }}
@@ -367,7 +367,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER TWENTY-FIVE</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER TWENTY-FIVE</h3>
                     <iframe
                         title="Chapter 25 player"
                         style={{ margin: "0 auto" }}
@@ -381,7 +381,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER TWENTY-SIX</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER TWENTY-SIX</h3>
                     <iframe
                         title="Chapter 26 player"
                         style={{ margin: "0 auto" }}
@@ -395,7 +395,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER TWENTY-SEVEN</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER TWENTY-SEVEN</h3>
                     <iframe
                         title="Chapter 27 player"
                         style={{ margin: "0 auto" }}
@@ -409,7 +409,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER TWENTY-EIGHT</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER TWENTY-EIGHT</h3>
                     <iframe
                         title="Chapter 28 player"
                         style={{ margin: "0 auto" }}
@@ -423,7 +423,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER TWENTY-NINE</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER TWENTY-NINE</h3>
                     <iframe
                         title="Chapter 29 player"
                         style={{ margin: "0 auto" }}
@@ -437,7 +437,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER THIRTY</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER THIRTY</h3>
                     <iframe
                         title="Chapter 30 player"
                         style={{ margin: "0 auto" }}
@@ -451,7 +451,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER THIRTY-ONE</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER THIRTY-ONE</h3>
                     <iframe
                         title="Chapter 31 player"
                         style={{ margin: "0 auto" }}
@@ -465,7 +465,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER THIRTY-TWO</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER THIRTY-TWO</h3>
                     <iframe
                         title="Chapter 32 player"
                         style={{ margin: "0 auto" }}
@@ -479,7 +479,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER THIRTY-THREE</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER THIRTY-THREE</h3>
                     <iframe
                         title="Chapter 33 player"
                         style={{ margin: "0 auto" }}
@@ -493,7 +493,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                     ></iframe>
                 </div>
                 <div>
-                    <h3>CHAPTER THIRTY-FOUR</h3>
+                    <h3 className={pomStyles.subtitle}>CHAPTER THIRTY-FOUR</h3>
                     <iframe
                         title="Chapter 34 player"
                         style={{ margin: "0 auto" }}
