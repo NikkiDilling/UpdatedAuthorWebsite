@@ -7,15 +7,15 @@ export default function DictionaryPage() {
     return (
         <div className={classes.dictionaryContainer} >
 
-            <h3>Demutriir Dictionary</h3>
+            <h3 className={classes.title}>Demutriir Dictionary</h3>
 
-            <div style={{width:"60%", margin:"0 auto"}}>
+            <div className={classes.dictionary}>
                 {Object.keys(dictionary).sort().map((key, index) => {
                     const k = key as keyof typeof dictionary;
                     return (
                         <div key={index} className={classes.dictionaryItem}>
                             <div>{key}</div>
-                            <div>{dictionary[k]}</div>
+                            <div style={{textAlign: "right"}}>{dictionary[k]}</div>
                         </div>
                     );
                 })}

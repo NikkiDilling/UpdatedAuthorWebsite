@@ -3,7 +3,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -18,10 +18,15 @@
     text-decoration: none;
 }
 
+.subtitle {
+    font-size: 2rem;
+}
+
 .btn:hover {
     scale: 1.03;
     color: rgb(231, 14, 134);
-    border-color: rgb(231, 14, 134);;
+    border-color: rgb(231, 14, 134);
+    ;
     transition: all 0.4s ease-in-out;
 }
 
@@ -34,14 +39,27 @@
     display: block;
 }
 
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .dictionaryContainer {
-    display: "flex";
-    flex-direction: "column";
+    display: flex;
+    flex-direction: column;
     width: 90%;
-    margin: 30px auto;
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .dictionary {
+        width: 90%;
+    }
 }
 
 .dictionaryItem {
@@ -69,5 +87,9 @@
 
     .btn {
         width: 30%;
+    }
+
+    .dictionary {
+        width: 60%;
     }
 }

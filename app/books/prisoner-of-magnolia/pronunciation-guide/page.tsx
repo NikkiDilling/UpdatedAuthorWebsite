@@ -6,9 +6,9 @@ export default function PronunciationGuidePage() {
     return (
         <div className={classes.dictionaryContainer} >
 
-            <h2>Pronunciation Guide</h2>
+            <h2 className={classes.title}>Pronunciation Guide</h2>
 
-            <h3>Character Names</h3>
+            <h3 className={classes.subtitle}>Character Names</h3>
             <p>Elayah Lorethain [E-LUH-ya LOH-ruh-thain]</p>
             <p>Tayrem Sáremson [TAY-rem SAY-rem-son]</p>
             <p>Raynard Varcas [Ray-NUHRD VUHR-cas]</p>
@@ -29,7 +29,7 @@ export default function PronunciationGuidePage() {
             <p>Evie (Evelyn) [EE-vee]</p>
             <p>Hektor [HEC-tuhr]</p>
 
-            <h3>Place Names</h3>
+            <h3 className={classes.subtitle}>Place Names</h3>
             <p>Navelir [Nah-veh-LEER]</p>
             <p>Lavius [LAY-vee-us]</p>
             <p>Sylvite [Sil-VITE]</p>
@@ -45,7 +45,7 @@ export default function PronunciationGuidePage() {
             <p>Ver-Tahar [Vyerh-Tah-HAR]</p>
             <p>Kareith [Kuh-RAYTH]</p>
 
-            <h3>Other</h3>
+            <h3 className={classes.subtitle}>Other</h3>
             <p>Fóax - [FOUH-ks]</p>
         </div>
     )
