@@ -10,10 +10,8 @@ import elayah from '../../public/assets/Elayah-final.webp';
 import elayahNrayn from '../../public/assets/Elayah&Rayn.webp';
 import alexCom from '../../public/assets/AlexCom.webp';
 import invasionTnE from '../../public/assets/CommissionNicole.webp';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Autoplay} from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import 'swiper/swiper-bundle.css';
 import ImagePopUp from '../components/ImagePopUp';
 import { useState } from 'react';
@@ -98,8 +96,9 @@ export default function ArtPage() {
             <Image src={divider} className={classes.divider} alt="divider" />
 
             <Swiper
-                modules={[Navigation]}
+                modules={[Navigation,Autoplay]}
                 grabCursor
+                autoplay={{ delay: 3000 }}
                 loop={true}
                 navigation
                 breakpoints={{

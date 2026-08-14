@@ -2,12 +2,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoodreads, faInstagram, faThreads } from '@fortawesome/free-brands-svg-icons';
 import MenuIcon from '@mui/icons-material/Menu';
-import MailIcon from '@mui/icons-material/Mail';
 import classes from '../css/Header.module.scss';
 import Navigation from './Navigation';
 import Link from 'next/link';
 import { Box, List, ListItem, ListItemButton, ListItemIcon, SwipeableDrawer, ListItemText } from '@mui/material';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useRef } from 'react';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import ColorLensIcon from '@mui/icons-material/ColorLens';
 import Face3Icon from '@mui/icons-material/Face3';

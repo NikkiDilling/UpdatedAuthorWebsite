@@ -64,6 +64,37 @@
         }
     }
 
+
+    .swiper {
+        width: 90vw;
+        height: auto;
+        margin: 0 auto;
+    }
+
+
+    .review {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .star path{
+            fill: rgb(231, 14, 134) !important;
+            margin-right: 5px;
+        }
+
+        .reviewer {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+    }
+
+
+    .review div{
+        margin: 5px 0;
+    }
+
+
     .statusContainer {
         display: flex;
         flex-direction: row;
@@ -132,14 +163,14 @@
         color: rgb(231, 14, 134);
     }
 
-    .quotes {
+/*     .quotes {
         font-size: 26px;
         margin-top: 30px;
         font-style: italic;
         text-align: center;
         color: rgb(231, 14, 134);
         padding: 10px;
-    }
+    } */
 }
 
 

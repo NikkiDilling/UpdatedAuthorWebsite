@@ -1,3 +1,5 @@
+"use client";
+import 'swiper/swiper-bundle.css';
 import classes from '../css/ProjectSunset.module.scss';
 import bookcover from "../../public/assets/PoM front cover.webp";
 //import map from "../../public/assets/world map.webp";
@@ -5,6 +7,43 @@ import mapOfficial from "../../public/assets/Gaudelir-map.webp";
 import divider from "../../public/assets/divider.webp";
 import Image from 'next/image';
 import { CircularProgress, Link } from '@mui/material';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Autoplay } from 'swiper/modules';
+import StarIcon from '@mui/icons-material/Star';
+
+
+const reviews = [
+  {
+    rating: 4,
+    text: "This book really does a beautiful job of presenting very complex characters in Elayah and Rayn.",
+    reviewer: "Claribel",
+    source: "Goodreads"
+  },
+  {
+    rating: 5,
+    text: "What can I say about this book except I really really need book 2 now!!!! The world building was fabulous mapping out all the different parts and their roles. Loved the descriptions of each of the kingdoms very vivid and made it very easy to picture.",
+    reviewer: "Nicky Stirrup",
+    source: "Goodreads"
+  },
+  {
+    rating: 5,
+    reviewer: "Jess Ashwyn",
+    text: "The characters are amazing, and well fleshed out. The subtle, slow-burn changes in the FMC's worldview are masterfully handled. I am not usually a fan of a love-triangle trope, but this is done so well.",
+    source: "Goodreads"
+  },
+  {
+    rating: 5,
+    text: "Prisoner of Magnolia is a fascinating tale, mixing thrills and twists with banter and emotional scenes.",
+    reviewer: "Scott S",
+    source: "Goodreads"
+  },
+  {
+    rating: 5,
+    text: "This story felt like a fairytale, the world itself, the magic, the way they travel in one part of this world, it was just beautiful.",
+    reviewer: "BookieMille",
+    source: "Goodreads"
+  }
+]
 
 export default function ProjectSunsetPage() {
 
@@ -56,7 +95,49 @@ export default function ProjectSunsetPage() {
             </div>
 
           </div>
+          <Image src={divider} className={classes.divider} alt="divider" />
 
+        
+            <Swiper
+              modules={[Autoplay]}
+              grabCursor
+              autoplay={{ delay: 5000 }}
+              loop={true}
+              breakpoints={{
+                0: {
+                  slidesPerView: 1,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 30
+                },
+                1200: {
+                  slidesPerView: 3,
+                  spaceBetween: 60,
+                },
+              }}
+              className={classes.swiper}
+            >
+
+              {reviews.map((review, index) => (
+                <SwiperSlide key={index}>
+                  <div className={classes.review}>
+                    <div className={classes.reviewText}>"{review.text}"</div>
+                    <div>
+                      {Array.from({ length: review.rating }).map((_, i) => (
+                        <StarIcon key={i} className={classes.star} />
+                      ))}
+                    </div>
+                    <div className={classes.reviewDetails}>
+                      <div className={classes.reviewer}>- {review.reviewer}</div>
+                      <div className={classes.source}>({review.source})</div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+
+            </Swiper>
+          
           <div className={classes.quotes}>
             <div></div>
           </div>
@@ -124,8 +205,8 @@ export default function ProjectSunsetPage() {
 
         </div>
 
-      </main>
+      </main >
 
-    </div>
+    </div >
   );
 }
