@@ -419,7 +419,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                         title="Chapter 26 player"
                         className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
-                        src=""
+                        src="https://open.spotify.com/embed/track/0xROa3NKM94ng8BK99MkhM?utm_source=generator&si=cced261bf22347d0"
                         width="70%"
                         height="152"
                         frameBorder="0"
