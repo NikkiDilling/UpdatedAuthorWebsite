@@ -475,7 +475,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                         title="Chapter 30 player"
                         className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
-                        src=""
+                        src="https://open.spotify.com/embed/track/5QActCIn175HPpZE2Ti6W6?utm_source=generator&si=b2856886cb544a32"
                         width="70%"
                         height="152"
                         frameBorder="0"
@@ -489,7 +489,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                         title="Chapter 31 player"
                         className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
-                        src=""
+                        src="https://open.spotify.com/embed/track/2aUsjBN2uYzNTV254mzbBG?utm_source=generator&si=24b91dd1969d4857"
                         width="70%"
                         height="152"
                         frameBorder="0"
@@ -503,7 +503,7 @@ export default function PrisonerOfMagnoliaPlaylist() {
                         title="Chapter 32 player"
                         className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
-                        src=""
+                        src="https://open.spotify.com/embed/track/2C1z64iNd9sp4bYm28vWdQ?utm_source=generator&si=f9259e561f3e4f84"
                         width="70%"
                         height="152"
                         frameBorder="0"
@@ -532,6 +532,17 @@ export default function PrisonerOfMagnoliaPlaylist() {
                         className={pomStyles.responsiveIframe}
                         data-testid="embed-iframe"
                         src="https://open.spotify.com/embed/track/2GZeUGXi4JL3gDgUdB2XSg?utm_source=generator&si=59e79be55c2d49df"
+                        width="70%"
+                        height="152"
+                        frameBorder="0"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                    ></iframe>
+                    <iframe
+                        title="Chapter 34 player"
+                        className={pomStyles.responsiveIframe}
+                        data-testid="embed-iframe"
+                        src="https://open.spotify.com/embed/track/6lVQ9NvinqAA78j2bFnsJ4?utm_source=generator&si=f6b5b2665f9b4d4a"
                         width="70%"
                         height="152"
                         frameBorder="0"
