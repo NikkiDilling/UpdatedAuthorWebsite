@@ -37,8 +37,8 @@ export default function Header() {
     switch (srch) {
       case 'books':
         return <MenuBookIcon />;
-/*       case 'Blog':
-        return <MailIcon />; */
+      /*       case 'Blog':
+              return <MailIcon />; */
       case 'art':
         return <ColorLensIcon />;
       case 'about':
@@ -59,7 +59,8 @@ export default function Header() {
     >
       <List>
         {['Books', 'Art', 'About', 'Contact'].map((text) => (
-          <Link href={text.toLocaleLowerCase()} key={text} className={classes.listItem}>
+          <Link href={`/${text.toLowerCase()}`}
+            key={text} className={classes.listItem}>
             <ListItem disablePadding >
 
               <ListItemButton>
