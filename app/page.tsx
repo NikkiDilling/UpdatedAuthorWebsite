@@ -5,6 +5,7 @@ import divider from "../public/assets/divider.webp";
 import pfp from "../public/assets/pfp.gif";
 import Image from 'next/image';
 import bookcover from "../public/assets/PoM front cover.webp";
+import { Analytics } from '@vercel/analytics/next';
 
 export default function Home() {
   return (
@@ -80,6 +81,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+       <Analytics />
     </div>
 
   );
