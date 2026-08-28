@@ -4,6 +4,7 @@ import "./globals.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Notification from "./components/Notification";
+import { Analytics } from '@vercel/analytics/next';
 
 const metamorphous = Metamorphous({
   subsets: ['latin'], // required
@@ -41,6 +42,7 @@ export default function RootLayout({
         <footer>
           <Footer />
         </footer>
+        <Analytics />
       </body>
     </html >
   );
