@@ -1,6 +1,6 @@
 import  Link from "next/link";
 import classes from "../css/BlogPost.module.scss";
-import type { ICampaign } from "../Blog/page";
+import type { ICampaign } from "../temp/Blog/page";
 
 export default function BlogPostPreview(props: { campaign: ICampaign }) {
 

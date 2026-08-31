@@ -1,11 +1,11 @@
 "use client";
-import classes from './../css/BlogPage.module.scss';
+import classes from './../../css/BlogPage.module.scss';
 import axios from "axios";
-import settings from "../settings.json";
+import settings from "../../settings.json";
 import { useEffect, useState } from "react";
-import BlogPostPreview from '../components/BlogPostPreview';
-import NewsletterForm from '../components/NewsLetterForm';
-import divider from "../../public/assets/divider.webp";
+import BlogPostPreview from '../../components/BlogPostPreview';
+import NewsletterForm from '../../components/NewsLetterForm';
+import divider from "../../../public/assets/divider.webp";
 import Image from 'next/image';
 import { Skeleton } from '@mui/material';
 
