@@ -73,7 +73,7 @@ export default function AboutPage() {
         <Image
           src={student}
           alt="student image"
-          style={{ width: "350px", height: "auto", objectFit: "contain", margin: "0 0 0 20px" }}
+          className={classes.studentImg}
         />
       </div>
 

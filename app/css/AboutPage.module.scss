@@ -16,6 +16,14 @@
     max-width: 90%;
 }
 
+.studentImg {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
+    margin: 20px auto 0;
+}
+
 .text {
     margin: 15px 0;
 }
@@ -59,6 +67,11 @@
 
     .aboutImg {
         max-width: 500px;
+    }
+
+    .studentImg {
+        width: 350px;
+        margin: 0 0 0 20px;
     }
 
     .desktop {

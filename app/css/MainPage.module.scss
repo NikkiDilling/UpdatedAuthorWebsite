@@ -74,6 +74,24 @@
     margin-right: 15px;
 }
 
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    margin: 30px auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+    padding: 0 20px;
+}
+
+.contactEmail {
+    overflow-wrap: anywhere;
+}
+
 
 .mainSection {
     flex: 3;
