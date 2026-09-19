@@ -1,16 +1,25 @@
     .container {
-        background: #39275B;
-        color: white;
+        background: linear-gradient(120deg, #150c29 0%, #241a44 65%, #331f52 100%);
+        border-top: 1px solid rgba(203, 161, 77, 0.35);
+        color: #f1e9ff;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
         min-height: 150px;
-        padding: 10px;
+        padding: 24px 10px;
+        font-family: var(--font-body), serif;
+        letter-spacing: 0.02em;
+        text-align: center;
 
         div {
             margin: 0 auto;
+        }
+
+        span {
+            color: rgba(241, 233, 255, 0.7);
+            font-size: 0.9em;
         }
     }
 

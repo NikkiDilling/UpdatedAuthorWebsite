@@ -1,5 +1,5 @@
 .container {
-    color: #39275B;
+    color: var(--text);
     height: 100%;
     width: 90%;
     margin: 10px auto;
@@ -14,6 +14,8 @@
 
 .aboutImg {
     max-width: 90%;
+    border-radius: var(--radius);
+    box-shadow: 0 0 0 1px rgba(203, 161, 77, 0.35), 0 18px 40px rgba(21, 12, 41, 0.2);
 }
 
 .studentImg {
@@ -22,6 +24,8 @@
     height: auto;
     object-fit: contain;
     margin: 20px auto 0;
+    border-radius: var(--radius);
+    box-shadow: 0 0 0 1px rgba(203, 161, 77, 0.35), 0 18px 40px rgba(21, 12, 41, 0.2);
 }
 
 .text {
@@ -35,6 +39,8 @@
 
 .greeting {
     text-align: center;
+    font-family: var(--font-display), serif;
+    font-style: italic;
 }
 
 .starSign {
@@ -42,8 +48,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 8px;
     padding: "20px 0 20px 0";
     margin: 15px auto;
+    color: var(--text-muted);
+    font-style: italic;
 }
 
 .divider {

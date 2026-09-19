@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Metamorphous } from 'next/font/google';
+import { Metamorphous, Cormorant_Garamond } from 'next/font/google';
 import "./globals.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -7,8 +7,16 @@ import Notification from "./components/Notification";
 import { Analytics } from '@vercel/analytics/next';
 
 const metamorphous = Metamorphous({
-  subsets: ['latin'], // required
-  weight: '400',      // optional, depends on font
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-display',
+});
+
+const cormorant = Cormorant_Garamond({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  style: ['normal', 'italic'],
+  variable: '--font-body',
 });
 
 export const metadata: Metadata = {
@@ -23,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={metamorphous.className} >
+      <body className={`${metamorphous.variable} ${cormorant.variable} ${cormorant.className}`}>
         <header>
           <Header />
           <Notification

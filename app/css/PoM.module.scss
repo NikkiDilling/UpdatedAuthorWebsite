@@ -11,11 +11,12 @@
     margin-top: 15px;
     width: 90%;
     padding: 10px 15px;
-    border: 1px solid #39275B;
-    color: #39275B;
-    border-radius: 8px;
+    border: 1px solid var(--gold);
+    color: var(--brand-deep);
+    border-radius: 999px;
     cursor: pointer;
     text-decoration: none;
+    transition: all 0.35s var(--ease);
 }
 
 .subtitle {
@@ -23,11 +24,11 @@
 }
 
 .btn:hover {
-    scale: 1.03;
-    color: rgb(231, 14, 134);
-    border-color: rgb(231, 14, 134);
-    ;
-    transition: all 0.4s ease-in-out;
+    transform: translateY(-2px);
+    color: #fff;
+    background: linear-gradient(120deg, var(--brand) 0%, var(--rose) 100%);
+    border-color: transparent;
+    box-shadow: 0 8px 20px rgba(230, 62, 156, 0.35);
 }
 
 /* Responsive iframe used by playlist pages */
@@ -70,7 +71,7 @@
     justify-content: space-between;
     text-align: center;
     margin: 0 auto;
-    border-bottom: 3px dotted #ccc;
+    border-bottom: 2px dotted rgba(203, 161, 77, 0.55);
 }
 
 .playlist {

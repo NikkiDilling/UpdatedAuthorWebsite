@@ -49,9 +49,11 @@ export default function Home() {
 
           <div className={classes.mobileView}>
             <Image src={divider} className={classes.divider} alt='divider' />
-            <h3>Nicole's newsletter</h3>
-            <p>Sign up for my newsletter and be the first to get book updates, writing tips, exclusive content, deals and so much more!</p>
-            <NewsletterForm />
+            <div className={classes.newsletterCard}>
+              <h3>Nicole's newsletter</h3>
+              <p>Sign up for my newsletter and be the first to get book updates, writing tips, exclusive content, deals and so much more!</p>
+              <NewsletterForm />
+            </div>
           </div>
 
 
@@ -63,11 +65,12 @@ export default function Home() {
         <div className={classes.recentPosts}>
 
           <div className={classes.desktopView}>
-            <h3 >Nicole's newsletter</h3>
-            <p>Sign up for my newsletter and be the first to get book updates, writing tips, exclusive content, deals and so much more!</p>
+            <div className={classes.newsletterCard}>
+              <h3>Nicole's newsletter</h3>
+              <p>Sign up for my newsletter and be the first to get book updates, writing tips, exclusive content, deals and so much more!</p>
 
-            <NewsletterForm />
-
+              <NewsletterForm />
+            </div>
           </div>
 
           <div >

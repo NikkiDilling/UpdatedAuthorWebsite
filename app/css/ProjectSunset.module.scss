@@ -1,6 +1,6 @@
 .container {
-    background: #ffff;
-    color: #39275B;
+    background: var(--surface);
+    color: var(--text);
     height: 100%;
     margin: auto;
     display: flex;
@@ -26,17 +26,22 @@
             height: auto;
             align-self: start;
             object-fit: contain;
+            border-radius: 6px;
+            box-shadow:
+                0 0 0 1px rgba(203, 161, 77, 0.45),
+                0 18px 40px rgba(21, 12, 41, 0.35);
         }
 
         .title {
             font-size: 22px;
             font-weight: 600;
+            font-family: var(--font-display), serif;
         }
 
         .subtitle {
             padding: 10px 0;
             font-size: 18px;
-            color: rgb(231, 14, 134);
+            color: var(--rose);
             font-weight: 400;
         }
 
@@ -50,19 +55,22 @@
             margin-top: 40px;
 
             .link {
-                border: 1px solid rgb(231, 14, 134);
+                border: 1px solid var(--gold);
                 font-size: 1.1rem;
-                border-radius: 8px;
+                border-radius: 999px;
                 padding: 10px 18px;
                 white-space: nowrap;
                 text-decoration: none;
-                color: rgb(231, 14, 134);
+                color: var(--brand-deep);
+                transition: all 0.35s var(--ease);
             }
 
             .link:hover {
-                background-color: rgb(231, 14, 134);
-                color: #ffff;
-                transition: all 0.3s ease-in-out;
+                background: linear-gradient(120deg, var(--brand) 0%, var(--rose) 100%);
+                border-color: transparent;
+                color: #fff;
+                transform: translateY(-2px);
+                box-shadow: 0 8px 20px rgba(230, 62, 156, 0.35);
             }
         }
 
@@ -73,7 +81,7 @@
             font-style: italic;
             text-align: center;
             line-height: 1.4;
-            color: rgba(57, 39, 91, 0.65);
+            color: var(--text-muted);
         }
     }
 
@@ -91,7 +99,7 @@
         text-align: center;
 
         .star path{
-            fill: rgb(231, 14, 134) !important;
+            fill: var(--gold) !important;
             margin-right: 5px;
         }
 
@@ -167,13 +175,13 @@
 
     circle,
     path {
-        fill: #755da3;
+        fill: var(--brand);
     }
 
     .bookTitle {
         font-style: italic;
         font-weight: 700;
-        color: rgb(231, 14, 134);
+        color: var(--rose);
     }
 
 /*     .quotes {

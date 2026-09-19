@@ -1,5 +1,5 @@
 .container {
-    color: #39275B;
+    color: var(--text);
     height: 100%;
     width: 90%;
     margin: 10px auto;
@@ -19,12 +19,16 @@
     width: 100%;
     height: 400px;
     aspect-ratio: 3 / 4;
-    /* book / artwork friendly */
-    /* optional neutral backdrop */
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow:
+        0 0 0 1px rgba(203, 161, 77, 0.3),
+        0 14px 32px rgba(21, 12, 41, 0.18);
+    overflow: hidden;
 }
 
 .imageWrapper img {
@@ -38,6 +42,17 @@
     text-align: start;
     margin-top: 20px;
     margin-left: 10px;
+
+    .title {
+        font-family: var(--font-display), serif;
+        color: var(--brand-deep);
+        font-size: 1.1rem;
+    }
+
+    .author {
+        color: var(--text-muted);
+        font-size: 0.9rem;
+    }
 }
 
 
