@@ -86,9 +86,14 @@ export default function ProjectSunsetPage() {
                 </div>
 
                 <div className={classes.links}>
-                  <Link target="_blank" className={classes.link} href="https://www.amazon.com/Prisoner-Magnolia-Nicole-D-Hansen-ebook/dp/B0H968RDHJ">Amazon</Link>
+                  <Link target="_blank" className={classes.link} href="https://www.barnesandnoble.com/w/prisoner-of-magnolia-nicole-d-hansen/1151217957?ean=9788797721971">Barnes & Noble</Link>
+                  <Link target="_blank" className={classes.link} href="https://www.amazon.com/Prisoner-Magnolia-Nicole-D-Hansen-ebook/dp/B0H968RDHJ">Amazon US</Link>
+                  <Link target="_blank" className={classes.link} href="https://www.amazon.co.uk/Prisoner-Magnolia-Nicole-D-Hansen/dp/8797721905/ref=sr_1_1?sr=8-1">Amazon UK</Link>
+                  <Link target="_blank" className={classes.link} href="https://www.amazon.de/-/da/Prisoner-Magnolia-Nicole-D-Hansen/dp/8797721972?language=en_GB">Amazon DE</Link>
                   <Link target="_blank" className={classes.link} href="https://www.goodreads.com/book/show/255533234-prisoner-of-magnolia">Goodreads</Link>
+
                 </div>
+                <p className={classes.disclaimer}>When ordering from Amazon delivery times depend on your chosen Amazon marketplace. For your convenience please choose the marketplace of your country or the country closest to you.</p>
               </div>
 
 
@@ -97,47 +102,47 @@ export default function ProjectSunsetPage() {
           </div>
           <Image src={divider} className={classes.divider} alt="divider" />
 
-        
-            <Swiper
-              modules={[Autoplay]}
-              grabCursor
-              autoplay={{ delay: 5000 }}
-              loop={true}
-              breakpoints={{
-                0: {
-                  slidesPerView: 1,
-                },
-                768: {
-                  slidesPerView: 2,
-                  spaceBetween: 30
-                },
-                1200: {
-                  slidesPerView: 3,
-                  spaceBetween: 60,
-                },
-              }}
-              className={classes.swiper}
-            >
 
-              {reviews.map((review, index) => (
-                <SwiperSlide key={index}>
-                  <div className={classes.review}>
-                    <div className={classes.reviewText}>"{review.text}"</div>
-                    <div>
-                      {Array.from({ length: review.rating }).map((_, i) => (
-                        <StarIcon key={i} className={classes.star} />
-                      ))}
-                    </div>
-                    <div className={classes.reviewDetails}>
-                      <div className={classes.reviewer}>- {review.reviewer}</div>
-                      <div className={classes.source}>({review.source})</div>
-                    </div>
+          <Swiper
+            modules={[Autoplay]}
+            grabCursor
+            autoplay={{ delay: 5000 }}
+            loop={true}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 30
+              },
+              1200: {
+                slidesPerView: 3,
+                spaceBetween: 60,
+              },
+            }}
+            className={classes.swiper}
+          >
+
+            {reviews.map((review, index) => (
+              <SwiperSlide key={index}>
+                <div className={classes.review}>
+                  <div className={classes.reviewText}>"{review.text}"</div>
+                  <div>
+                    {Array.from({ length: review.rating }).map((_, i) => (
+                      <StarIcon key={i} className={classes.star} />
+                    ))}
                   </div>
-                </SwiperSlide>
-              ))}
+                  <div className={classes.reviewDetails}>
+                    <div className={classes.reviewer}>- {review.reviewer}</div>
+                    <div className={classes.source}>({review.source})</div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
 
-            </Swiper>
-          
+          </Swiper>
+
           <div className={classes.quotes}>
             <div></div>
           </div>

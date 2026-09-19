@@ -6,7 +6,7 @@
     display: flex;
     padding: 0 0 40px 0;
     flex-direction: column;
-    text-align: justify;
+    text-align: left;
 
     h1 {
         font-size: 40px;
@@ -103,6 +103,12 @@
 }
 
 
+
+@media only screen and (min-width: 700px) {
+    .container {
+        text-align: justify;
+    }
+}
 
 @media only screen and (min-width: 1000px) {
 

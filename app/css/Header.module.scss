@@ -43,11 +43,16 @@
 
 }
 
+.title {
+    flex-shrink: 0;
+}
+
 .title a {
     color: white;
     width: fit-content;
     margin-left: 20px;
     font-size: 20px;
+    white-space: nowrap;
 }
 
 .navigation {
@@ -79,7 +84,7 @@
 
 
 
-@media only screen and (min-width: 1220px) {
+@media only screen and (min-width: 900px) {
 
     .icons {
         flex: 1;
