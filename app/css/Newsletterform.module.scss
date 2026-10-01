@@ -20,16 +20,17 @@
 
     .subscribeBtn {
         margin-top: 15px;
-        background: linear-gradient(120deg, var(--brand) 0%, var(--rose) 100%) !important;
+        background: var(--brand) !important;
         color: white;
         border-radius: 999px !important;
         letter-spacing: 0.03em;
-        box-shadow: 0 6px 18px rgba(230, 62, 156, 0.35);
-        transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+        box-shadow: 0 6px 18px rgba(74, 47, 122, 0.35);
+        transition: background 0.3s var(--ease), transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
 
         &:hover {
+            background: var(--brand-deep) !important;
             transform: translateY(-2px);
-            box-shadow: 0 10px 24px rgba(230, 62, 156, 0.45);
+            box-shadow: 0 10px 24px rgba(74, 47, 122, 0.45);
         }
     }
 }
@@ -44,7 +45,7 @@
     width: fit-content;
     margin: 5px auto !important;
     padding: 10px 15px;
-    background: linear-gradient(120deg, var(--brand) 0%, var(--rose) 100%) !important;
+    background: var(--brand) !important;
     color: #ffff !important;
     border-radius: 999px;
     cursor: pointer;

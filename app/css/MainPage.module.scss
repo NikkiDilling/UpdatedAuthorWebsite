@@ -57,7 +57,7 @@
     margin-top: 15px;
     width: fit-content;
     padding: 11px 22px;
-    background: linear-gradient(120deg, var(--brand) 0%, var(--rose) 100%);
+    background: var(--brand);
     color: #fff;
     border-radius: 999px;
     cursor: pointer;
@@ -65,8 +65,8 @@
     font-family: var(--font-body), serif;
     font-size: 1.05rem;
     letter-spacing: 0.02em;
-    box-shadow: 0 6px 18px rgba(230, 62, 156, 0.35);
-    transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+    box-shadow: 0 6px 18px rgba(74, 47, 122, 0.35);
+    transition: background 0.35s var(--ease), transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
 }
 
 .readMoreBtn::after {
@@ -75,8 +75,9 @@
 }
 
 .readMoreBtn:hover {
+    background: var(--brand-deep);
     transform: translateY(-2px);
-    box-shadow: 0 10px 26px rgba(230, 62, 156, 0.45);
+    box-shadow: 0 10px 26px rgba(74, 47, 122, 0.45);
 }
 
 .readMoreBtn:hover::after {
