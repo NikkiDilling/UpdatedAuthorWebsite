@@ -1,34 +1,156 @@
-.btnContainer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 70%;
-    margin: 0 auto;
-}
-
-.btn {
-    margin-top: 15px;
-    width: 90%;
-    padding: 10px 15px;
-    border: 1px solid var(--gold);
-    color: var(--brand-deep);
-    border-radius: 999px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 0.35s var(--ease);
-}
-
 .subtitle {
     font-size: 2rem;
 }
 
-.btn:hover {
-    transform: translateY(-2px);
-    color: #fff;
-    background: linear-gradient(120deg, var(--brand) 0%, var(--rose) 100%);
-    border-color: transparent;
-    box-shadow: 0 8px 20px rgba(230, 62, 156, 0.35);
+/* ---- Prisoner of Magnolia hub page ---- */
+
+.hub {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+    box-sizing: border-box;
+}
+
+.hubEyebrow {
+    margin: 0 0 10px;
+    font-family: var(--font-body), serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-align: center;
+}
+
+.hubHeading {
+    margin: 0 0 14px;
+    font-size: 2.2rem;
+    font-style: italic;
+    color: var(--brand-deep);
+    text-align: center;
+}
+
+.hubIntro {
+    margin: 0 auto 36px;
+    max-width: 520px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+    text-align: center;
+}
+
+.resourceGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.resourceCard {
+    display: grid;
+    grid-template-columns: 44px 1fr auto;
+    align-items: center;
+    gap: 18px;
+    padding: 20px 22px;
+    background: var(--surface);
+    border: 1px solid rgba(203, 161, 77, 0.3);
+    border-radius: var(--radius);
+    text-decoration: none;
+    box-shadow: var(--shadow-soft);
+    transition: border-color 0.3s var(--ease), transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+
+    svg {
+        width: 24px;
+        height: 24px;
+        color: var(--gold);
+        transition: color 0.3s var(--ease);
+    }
+
+    .resourceArrow {
+        color: var(--text-muted);
+        transition: transform 0.3s var(--ease), color 0.3s var(--ease);
+    }
+
+    &:hover {
+        border-color: var(--gold);
+        transform: translateY(-3px);
+        box-shadow: 0 14px 30px rgba(74, 47, 122, 0.18);
+
+        svg {
+            color: var(--rose);
+        }
+
+        .resourceArrow {
+            color: var(--rose);
+            transform: translateX(4px);
+        }
+    }
+}
+
+.resourceIcon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(203, 161, 77, 0.12);
+}
+
+.resourceText {
+    min-width: 0;
+    text-align: left;
+}
+
+.resourceName {
+    display: block;
+    font-family: var(--font-display), serif;
+    font-size: 1.15rem;
+    color: var(--brand-deep);
+}
+
+.resourceDescription {
+    display: block;
+    margin-top: 2px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.mapSection {
+    margin-top: 48px;
+    text-align: center;
+}
+
+.mapHeading {
+    margin: 0 0 6px;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--brand-deep);
+}
+
+.mapHint {
+    margin: 0 0 24px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.mapFrame {
+    display: inline-block;
+    padding: 10px;
+    background: var(--surface);
+    border-radius: var(--radius);
+    box-shadow:
+        0 0 0 1px rgba(203, 161, 77, 0.35),
+        var(--shadow-soft);
+    cursor: pointer;
+    transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow:
+            0 0 0 1px rgba(203, 161, 77, 0.6),
+            0 20px 40px rgba(21, 12, 41, 0.22);
+    }
 }
 
 /* Responsive iframe used by playlist pages */
@@ -87,23 +209,22 @@
 }
 
 .map {
-    width: 90%;
+    display: block;
+    width: 260px;
+    max-width: 68vw;
     height: auto;
-    margin: 20px auto;
-    cursor: pointer;
+    margin: 0;
+    border-radius: calc(var(--radius) - 6px);
 }
 
 @media (min-width: 768px) {
     .map {
-        width: 40% !important;
+        width: 320px;
+        max-width: 320px;
     }
 
     .responsiveIframe {
         width: 70%;
-    }
-
-    .btn {
-        width: 30%;
     }
 
     .dictionary {
