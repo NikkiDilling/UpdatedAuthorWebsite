@@ -1,7 +1,6 @@
 .section {
     width: 100%;
     flex: 1;
-    background: var(--ink-gradient);
     display: flex;
     justify-content: center;
 }
@@ -9,7 +8,7 @@
 .container {
     width: 100%;
     max-width: 640px;
-    padding: 64px 24px 80px;
+    padding: 56px 24px 80px;
     box-sizing: border-box;
 }
 
@@ -27,7 +26,7 @@
 .heading {
     margin: 0 0 16px;
     font-size: 2.6rem;
-    color: var(--ink-text);
+    color: var(--brand-deep);
     font-style: italic;
     text-align: left;
 }
@@ -36,7 +35,7 @@
     margin: 0 0 40px;
     font-size: 19px;
     line-height: 1.6;
-    color: var(--ink-text-muted);
+    color: var(--text-muted);
     text-align: left;
     max-width: 480px;
 }
@@ -53,11 +52,12 @@
     align-items: center;
     gap: 18px;
     padding: 22px;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(203, 161, 77, 0.25);
+    background: var(--surface);
+    border: 1px solid rgba(203, 161, 77, 0.3);
     border-radius: var(--radius);
     text-decoration: none;
-    transition: border-color 0.25s var(--ease), background 0.25s var(--ease), transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+    box-shadow: var(--shadow-soft);
+    transition: border-color 0.25s var(--ease), transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
 
     svg {
         width: 28px;
@@ -68,16 +68,15 @@
 
     &:hover {
         border-color: var(--gold);
-        background: rgba(255, 255, 255, 0.06);
-        transform: translateY(-2px);
-        box-shadow: 0 10px 26px rgba(21, 12, 41, 0.35);
+        transform: translateY(-3px);
+        box-shadow: 0 14px 30px rgba(74, 47, 122, 0.18);
 
         svg {
             color: var(--rose);
         }
 
         .channelName {
-            color: #fff;
+            color: var(--rose);
         }
     }
 }
@@ -92,22 +91,17 @@
 .channelName {
     font-family: var(--font-display), serif;
     font-size: 1.3rem;
-    color: var(--ink-text);
+    color: var(--brand-deep);
     transition: color 0.25s var(--ease);
 }
 
 .channelHandle {
     font-size: 0.95rem;
-    color: var(--ink-text-muted);
+    color: var(--text-muted);
     overflow-wrap: anywhere;
 }
 
 @media only screen and (min-width: 700px) {
-    .container {
-        padding-top: 88px;
-        text-align: left;
-    }
-
     .heading {
         font-size: 3.2rem;
     }
