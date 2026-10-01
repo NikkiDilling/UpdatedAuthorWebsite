@@ -1,10 +1,8 @@
 
 import classes from '../css/AboutPage.module.scss';
-import about from "../../public/assets/about image.webp";
 import aries from "../../public/assets/aries.webp";
 import student from "../../public/assets/student.webp";
 import Image from 'next/image';
-import Divider from '../components/Divider';
 
 export default function AboutPage() {
 
@@ -18,76 +16,37 @@ export default function AboutPage() {
 
           <div className={classes.starSign}>
             <div>Star Sign:</div>
-            <Image src={aries} alt="star sign" width={100} />
+            <Image src={aries} alt="star sign" width={72} />
           </div>
         </div>
-        
-        <Image src={about} alt="About Nicole" className={classes.aboutImg} />
-
-        <div>
-          <div className={classes.desktop}>
-            <h1 className={classes.greeting}>Hi, I'm Nicole!</h1>
-
-            <div className={classes.starSign}>
-              <div>Star Sign:</div>
-              <Image src={aries} alt="star sign" width={100} />
-            </div>
-          </div>
-          <div>
-
-
-
-            <div className={classes.text}>
-              For as long as I can remember I've always loved writing and drawing. Somewhere around middle-school I started writing silly little novellas and short stories.
-            </div>
-
-            <div className={classes.text}>
-              My biggest publishing achievement was perhaps when I interviewd a war veteran for a school project, which was published as part of an anthology.
-            </div>
-            <div className={classes.text}>
-              Rereading it now...
-            </div>
-            <div className={classes.text}>
-              I've got no idea who allowed to publish something with so many typos. But I was in 7th grade. So I can forgive myself that transgretion.
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <Divider />
-      <div className={classes.section} style={{ alignItems: "start", justifyContent: "space-between" }}>
-
-        <div>
-          <div className={classes.text}>
-            A little about myself... I was pragmatic with the choice of my major.
-          </div>
-          <div className={classes.text}>
-            I studied computer science and informatics in university in hopes of always having a stable income and in turn the freedom to be able to do whatever I want later. This later has come and I decided to pursue my dream of being a published author.
-          </div>
-          <div className={classes.text} >
-            My degree has come in handy in many ways, not least of which is the ability to build and maintain this website all by myself, which has cut me some costs. The only thing I can't do is design. As you can see this website is rather minimalistic. But hey, it works!
-          </div>
-        </div>
-
 
         <Image
           src={student}
           alt="student image"
           className={classes.studentImg}
         />
+
+        <div className={classes.bioColumn}>
+          <div className={classes.desktop}>
+            <h1 className={classes.greeting}>Meet Nicole D. Hansen</h1>
+
+            <div className={classes.starSign}>
+              <div>Star Sign:</div>
+              <Image src={aries} alt="star sign" width={72} />
+            </div>
+          </div>
+
+          <div className={classes.text}>
+            Nicole is an indie fantasy author from Roskilde, a small but culturally significant Danish town, now based in Copenhagen. After earning her bachelor's degree in Computer Science and Informatics, she finally decided to pursue her passion for writing and storytelling.
+          </div>
+          <div className={classes.text}>
+            Computer science and writing could not be more different, but Nicole finds a creative outlet in both. Her dream now is to pursue a career in writing full-time — she's currently working on the second book in the Prisoner of Magnolia series.
+          </div>
+        </div>
       </div>
 
-      <Divider />
 
-      {/*       <div>
-        <div>My favourite books:</div>
-        <ul>
-          <li>Hunger Games</li>
-          <li>Six of Crows</li>
-          <li>Twilight... (it's a fun read, okay?)</li>
-        </ul>
-      </div>
-      <Divider /> */}
+
     </div>
   );
 }
