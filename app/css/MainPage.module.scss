@@ -104,34 +104,6 @@
     margin-right: 15px;
 }
 
-.contactContainer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 600px;
-    box-sizing: border-box;
-    margin: 30px auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 22px;
-    padding: 0 20px;
-}
-
-.contactEmail {
-    overflow-wrap: anywhere;
-}
-
-.icon {
-    color: var(--brand-deep);
-    font-size: 1.4rem;
-    transition: color 0.3s var(--ease), transform 0.3s var(--ease);
-
-    &:hover {
-        color: var(--rose);
-        transform: translateY(-2px) scale(1.08);
-    }
-}
 
 
 .mainSection {

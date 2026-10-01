@@ -10,6 +10,9 @@
   --rose-soft: #f0a8cf;
   --gold: #cba14d;
   --gold-soft: #e8d29d;
+  --ink-gradient: linear-gradient(120deg, #150c29 0%, #241a44 65%, #331f52 100%);
+  --ink-text: #f1e9ff;
+  --ink-text-muted: rgba(241, 233, 255, 0.68);
 
   --bg: #faf8ff;
   --surface: #ffffff;
@@ -93,7 +96,7 @@ h3::after {
 
 div[class~="MuiDrawer-paper"] {
   width: min(75vw, 320px) !important;
-  background: linear-gradient(165deg, var(--ink) 0%, var(--ink-soft) 100%) !important;
+  background: var(--ink-gradient) !important;
 }
 
 div[class="swiper-button-prev"],

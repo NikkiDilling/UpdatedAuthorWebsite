@@ -1,0 +1,114 @@
+.section {
+    width: 100%;
+    flex: 1;
+    background: var(--ink-gradient);
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 640px;
+    padding: 64px 24px 80px;
+    box-sizing: border-box;
+}
+
+.eyebrow {
+    margin: 0 0 12px;
+    font-family: var(--font-body), serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-align: left;
+}
+
+.heading {
+    margin: 0 0 16px;
+    font-size: 2.6rem;
+    color: var(--ink-text);
+    font-style: italic;
+    text-align: left;
+}
+
+.intro {
+    margin: 0 0 40px;
+    font-size: 19px;
+    line-height: 1.6;
+    color: var(--ink-text-muted);
+    text-align: left;
+    max-width: 480px;
+}
+
+.channels {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.channel {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    align-items: center;
+    gap: 18px;
+    padding: 22px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(203, 161, 77, 0.25);
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: border-color 0.25s var(--ease), background 0.25s var(--ease), transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+
+    svg {
+        width: 28px;
+        height: 28px;
+        color: var(--gold);
+        transition: color 0.25s var(--ease);
+    }
+
+    &:hover {
+        border-color: var(--gold);
+        background: rgba(255, 255, 255, 0.06);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 26px rgba(21, 12, 41, 0.35);
+
+        svg {
+            color: var(--rose);
+        }
+
+        .channelName {
+            color: #fff;
+        }
+    }
+}
+
+.channelText {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+
+.channelName {
+    font-family: var(--font-display), serif;
+    font-size: 1.3rem;
+    color: var(--ink-text);
+    transition: color 0.25s var(--ease);
+}
+
+.channelHandle {
+    font-size: 0.95rem;
+    color: var(--ink-text-muted);
+    overflow-wrap: anywhere;
+}
+
+@media only screen and (min-width: 700px) {
+    .container {
+        padding-top: 88px;
+        text-align: left;
+    }
+
+    .heading {
+        font-size: 3.2rem;
+    }
+}

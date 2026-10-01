@@ -1,30 +1,40 @@
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import classes from './../css/MainPage.module.scss';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import classes from '../css/ContactPage.module.scss';
 
 export default function ContactPage() {
 
-
   return (
-    <div className={classes.contactContainer}>
+    <div className={classes.section}>
+      <div className={classes.container}>
+        <p className={classes.eyebrow}>Contact</p>
+        <h1 className={classes.heading}>Come say hi!</h1>
+        <p className={classes.intro}>
+          Questions about the books, fan mail, or just want to talk about elves? Find me here.
+        </p>
 
-      <h3>Contact Me</h3>
-
-      <div style={{marginBottom: "20px"}}>
-        <div>Email: <span className={classes.contactEmail} style={{color:"rgb(231, 14, 134)"}}>nicoledhansen.mail@gmail.com</span></div>
-      </div>
-
-      <div>Or you reach me here:
-
-        <span>
-          <a href='https://www.instagram.com/ndhansen_' target='_blank'>
-            <FontAwesomeIcon
-              icon={faInstagram}
-              className={classes.icon}
-            />
+        <div className={classes.channels}>
+          <a className={classes.channel} href="mailto:nicoledhansen.mail@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <rect x="2.5" y="4.5" width="19" height="15" rx="3" />
+              <path d="M3.5 6.5l8.5 6.5 8.5-6.5" />
+            </svg>
+            <span className={classes.channelText}>
+              <span className={classes.channelName}>Email</span>
+              <span className={classes.channelHandle}>nicoledhansen.mail@gmail.com</span>
+            </span>
           </a>
-        </span>
+
+          <a className={classes.channel} href="https://www.instagram.com/ndhansen_" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="0.9" fill="currentColor" stroke="none" />
+            </svg>
+            <span className={classes.channelText}>
+              <span className={classes.channelName}>Instagram</span>
+              <span className={classes.channelHandle}>@ndhansen_</span>
+            </span>
+          </a>
+        </div>
       </div>
     </div>
   );

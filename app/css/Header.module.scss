@@ -33,7 +33,7 @@
 }
 
 .containerHeader {
-    background: linear-gradient(120deg, #150c29 0%, #241a44 65%, #331f52 100%);
+    background: var(--ink-gradient);
     border-bottom: 1px solid rgba(203, 161, 77, 0.35);
     box-shadow: 0 6px 24px rgba(10, 5, 25, 0.35);
     display: flex;
