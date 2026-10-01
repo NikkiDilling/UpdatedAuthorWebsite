@@ -8,7 +8,7 @@ export default function ContactPage() {
         <p className={classes.eyebrow}>Contact</p>
         <h1 className={classes.heading}>Come say hi!</h1>
         <p className={classes.intro}>
-          Questions about the books, fan mail, or just want to talk about elves? Find me here.
+          Questions about the books, want to collaborate, or just want to talk about elves? Find me here.
         </p>
 
         <div className={classes.channels}>
