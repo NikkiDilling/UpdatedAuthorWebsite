@@ -1,0 +1,32 @@
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 280px;
+    margin: 40px auto;
+}
+
+.hideDesktop {
+    @media (min-width: 1000px) {
+        display: none;
+    }
+}
+
+.line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.spark {
+    flex-shrink: 0;
+    font-size: 20px;
+    line-height: 1;
+    background: linear-gradient(135deg, var(--gold) 0%, var(--rose) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 6px rgba(203, 161, 77, 0.45));
+}

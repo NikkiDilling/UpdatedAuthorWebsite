@@ -93,12 +93,6 @@
 }
 
 
-.divider {
-    display: block;
-    margin: 40px auto !important;
-    width: 250px;
-}
-
 .image {
     display: inline-block;
     margin-right: 15px;
@@ -159,10 +153,6 @@
         width: 15vw;
     }
 
-    .divider {
-        display: block;
-    }
-
 
     .container {
         display: flex;
@@ -186,10 +176,6 @@
 
     .recentPosts {
         flex: 1;
-
-        .divider {
-            display: none;
-        }
     }
 
 

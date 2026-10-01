@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import classes from './css/MainPage.module.scss';
 import NewsletterForm from './components/NewsLetterForm';
-import divider from "../public/assets/divider.webp";
+import Divider from './components/Divider';
 import pfp from "../public/assets/pfp.gif";
 import Image from 'next/image';
 import bookcover from "../public/assets/PoM front cover.webp";
@@ -32,7 +32,7 @@ export default function Home() {
 
           </div>
 
-          <Image src={divider} className={classes.divider} alt='divider' />
+          <Divider />
 
           <div className={classes.section}>
 
@@ -48,7 +48,7 @@ export default function Home() {
           </div>
 
           <div className={classes.mobileView}>
-            <Image src={divider} className={classes.divider} alt='divider' />
+            <Divider />
             <div className={classes.newsletterCard}>
               <h3>Nicole's newsletter</h3>
               <p>Sign up for my newsletter and be the first to get book updates, writing tips, exclusive content, deals and so much more!</p>
@@ -74,7 +74,6 @@ export default function Home() {
           </div>
 
           <div >
-            {/* <Image src={divider} className={classes.divider} alt='divider'/> */}
             {/* <h4>Recent blog posts</h4> */}
             <div>
               {/* Blog posts will go here */}

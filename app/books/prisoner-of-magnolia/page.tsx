@@ -4,7 +4,7 @@ import Link from "next/link";
 import classes from './../../css/PoM.module.scss';
 import mapOfficial from './../../../public/assets/Gaudelir-map.webp';
 import Image from "next/image";
-import divider from "./../../../public/assets/divider.webp";
+import Divider from '../../components/Divider';
 import { useState } from 'react';
 import ImagePopUp from '../../components/ImagePopUp';
 
@@ -77,7 +77,7 @@ export default function PrisonerOfMagnoliaPage() {
                 ))}
             </div>
 
-            <Image src={divider} alt="divider" className={classes.divider} />
+            <Divider />
 
             <div className={classes.mapSection}>
                 <h2 className={classes.mapHeading}>Map of Gaudelir</h2>

@@ -5,8 +5,7 @@ import settings from "../../settings.json";
 import { useEffect, useState } from "react";
 import BlogPostPreview from '../../components/BlogPostPreview';
 import NewsletterForm from '../../components/NewsLetterForm';
-import divider from "../../../public/assets/divider.webp";
-import Image from 'next/image';
+import Divider from '../../components/Divider';
 import { Skeleton } from '@mui/material';
 
 export interface ICampaign {
@@ -111,7 +110,7 @@ export default function BlogPage() {
             )}
           </div>
 
-          <Image src={divider} className={classes.divider} alt="divider" />
+          <Divider hideOnDesktop />
         </div>
 
 

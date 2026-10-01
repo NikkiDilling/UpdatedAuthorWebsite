@@ -2,9 +2,9 @@
 import classes from '../css/AboutPage.module.scss';
 import about from "../../public/assets/about image.webp";
 import aries from "../../public/assets/aries.webp";
-import divider from "../../public/assets/divider.webp";
 import student from "../../public/assets/student.webp";
 import Image from 'next/image';
+import Divider from '../components/Divider';
 
 export default function AboutPage() {
 
@@ -54,7 +54,7 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
-      <Image src={divider} alt="divider" className={classes.divider} />
+      <Divider />
       <div className={classes.section} style={{ alignItems: "start", justifyContent: "space-between" }}>
 
         <div>
@@ -77,8 +77,8 @@ export default function AboutPage() {
         />
       </div>
 
-      <Image src={divider} alt="divider" className={classes.divider} />
-      
+      <Divider />
+
       {/*       <div>
         <div>My favourite books:</div>
         <ul>
@@ -87,7 +87,7 @@ export default function AboutPage() {
           <li>Twilight... (it's a fun read, okay?)</li>
         </ul>
       </div>
-      <img src={divider} className={classes.divider} /> */}
+      <Divider /> */}
     </div>
   );
 }

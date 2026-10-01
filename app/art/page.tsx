@@ -18,7 +18,7 @@ import 'swiper/swiper-bundle.css';
 import ImagePopUp from '../components/ImagePopUp';
 import { useState } from 'react';
 import Image from 'next/image';
-import divider from "../../public/assets/divider.webp";
+import Divider from '../components/Divider';
 
 
 export default function ArtPage() {
@@ -95,7 +95,7 @@ export default function ArtPage() {
 
 
             </div>
-            <Image src={divider} className={classes.divider} alt="divider" />
+            <Divider />
 
             <Swiper
                 modules={[Navigation,Autoplay]}

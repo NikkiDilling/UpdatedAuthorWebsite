@@ -4,7 +4,7 @@ import classes from '../css/ProjectSunset.module.scss';
 import bookcover from "../../public/assets/PoM front cover.webp";
 //import map from "../../public/assets/world map.webp";
 import mapOfficial from "../../public/assets/Gaudelir-map.webp";
-import divider from "../../public/assets/divider.webp";
+import Divider from '../components/Divider';
 import Image from 'next/image';
 import { CircularProgress, Link } from '@mui/material';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -100,7 +100,7 @@ export default function ProjectSunsetPage() {
             </div>
 
           </div>
-          <Image src={divider} className={classes.divider} alt="divider" />
+          <Divider />
 
 
           <Swiper
@@ -147,7 +147,7 @@ export default function ProjectSunsetPage() {
             <div></div>
           </div>
 
-          <Image src={divider} className={classes.divider} alt="divider" />
+          <Divider />
           <div>
             <Image
               className={classes.map}
@@ -160,7 +160,7 @@ export default function ProjectSunsetPage() {
 
 
 
-          <Image src={divider} className={classes.divider} alt="divider" />
+          <Divider />
 
           <div className={classes.textContainer}>
 
