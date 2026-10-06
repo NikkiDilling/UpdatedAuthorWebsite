@@ -1,7 +1,7 @@
 
 import classes from '../css/AboutPage.module.scss';
 import aries from "../../public/assets/aries.webp";
-import student from "../../public/assets/student.webp";
+import authorPhoto from "../../public/assets/author photo.jpg";
 import Image from 'next/image';
 
 export default function AboutPage() {
@@ -21,9 +21,10 @@ export default function AboutPage() {
         </div>
 
         <Image
-          src={student}
-          alt="student image"
-          className={classes.studentImg}
+          src={authorPhoto}
+          alt="Nicole D. Hansen holding Prisoner of Magnolia"
+          className={classes.authorImg}
+          priority
         />
 
         <div className={classes.bioColumn}>

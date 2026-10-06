@@ -1,60 +1,97 @@
 .container {
     color: var(--text);
-    height: 100%;
     width: 100%;
-    margin: auto;
+    text-align: center;
+}
+
+// Each section fills the viewport below the 64px fixed header.
+.screen {
+    min-height: calc(100vh - 64px);
+    min-height: calc(100svh - 64px);
     display: flex;
-    padding: 0 0 40px 0;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 24px;
+    box-sizing: border-box;
+}
+
+.screenInner {
+    display: flex;
     flex-direction: column;
-    text-align: left;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.sectionContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 520px;
 
     h1 {
-        font-size: 40px;
+        margin: 0 0 8px;
+        font-size: 2rem;
         font-style: italic;
+        color: var(--brand-deep);
+    }
+
+    h3 {
+        font-size: 2rem;
     }
 }
 
-.bookIntro {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    text-align: start;
+.authorPhoto {
+    height: min(38vh, 400px);
+    height: min(38svh, 400px);
+    width: auto;
+    max-width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: 50% 30%;
+    border-radius: var(--radius);
+    box-shadow:
+        0 0 0 1px rgba(203, 161, 77, 0.45),
+        0 18px 40px rgba(21, 12, 41, 0.3);
+}
 
-    .bookCover {
-        width: 35%;
-        height: auto;
-        align-self: center;
-        object-fit: contain;
-        border-radius: 6px;
+.bookCover {
+    height: min(38vh, 400px);
+    height: min(38svh, 400px);
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow:
+        0 0 0 1px rgba(203, 161, 77, 0.45),
+        0 18px 40px rgba(21, 12, 41, 0.35);
+    transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
+
+    &:hover {
+        transform: translateY(-4px);
         box-shadow:
-            0 0 0 1px rgba(203, 161, 77, 0.45),
-            0 18px 40px rgba(21, 12, 41, 0.35);
-        transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
-
-        &:hover {
-            transform: translateY(-4px);
-            box-shadow:
-                0 0 0 1px rgba(203, 161, 77, 0.7),
-                0 24px 48px rgba(21, 12, 41, 0.4);
-        }
-    }
-
-    span {
-        font-style: italic;
-        color: var(--rose);
+            0 0 0 1px rgba(203, 161, 77, 0.7),
+            0 24px 48px rgba(21, 12, 41, 0.4);
     }
 }
 
+.release {
+    margin-top: 6px;
+    font-style: italic;
+    color: var(--rose);
+}
 
 .text {
-    margin: 15px 0;
+    margin: 8px 0;
+    font-size: 1.1rem;
 }
 
 .readMoreBtn {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    margin-top: 15px;
+    margin-top: 18px;
     width: fit-content;
     padding: 11px 22px;
     background: var(--brand);
@@ -84,125 +121,68 @@
     transform: translateX(4px);
 }
 
-
-.pfp {
-    width: 40vw;
-    display: block;
-    margin: 0 auto;
-    object-fit: contain;
-    filter: drop-shadow(0 12px 26px rgba(21, 12, 41, 0.3));
-}
-
-
-.image {
-    display: inline-block;
-    margin-right: 15px;
-}
-
-
-
-.mainSection {
-    flex: 3;
-    margin-top: 15px;
-    padding: 0 20px;
-    width: 100%;
-
-    .section {
-        display: flex;
-        flex-direction: column;
-
-        .sectionContent {
-            display: flex;
-            flex-direction: column;
-        }
-    }
-}
-
-.desktopView {
-    display: none;
-}
-
-.mobileView {
-    display: block;
-    width: 100%;
-}
-
 .newsletterCard {
+    width: 100%;
+    max-width: 560px;
     background: linear-gradient(160deg, rgba(74, 47, 122, 0.06) 0%, rgba(230, 62, 156, 0.05) 100%), var(--surface);
     border: 1px solid rgba(203, 161, 77, 0.35);
     border-radius: var(--radius);
     box-shadow: var(--shadow-soft);
-    padding: 28px 22px;
-    margin-top: 20px;
+    padding: 40px 28px;
+    box-sizing: border-box;
 
     h3::after {
         margin: 14px auto 0;
     }
-}
 
-
-
-@media only screen and (min-width: 700px) {
-    .container {
-        text-align: justify;
+    p {
+        margin: 18px 0 22px;
     }
 }
 
-@media only screen and (min-width: 1000px) {
-
-    .pfp {
-        width: 15vw;
-    }
-
-
-    .container {
-        display: flex;
+@media only screen and (min-width: 900px) {
+    .screenInner {
         flex-direction: row;
+        justify-content: center;
+        gap: 72px;
+    }
+
+    .container {
+        text-align: left;
+    }
+
+    .screen:nth-of-type(2) .screenInner {
+        flex-direction: row-reverse;
+    }
+
+    .authorPhoto {
+        height: min(70vh, 640px);
+        height: min(70svh, 640px);
+    }
+
+    .bookCover {
+        height: min(70vh, 640px);
+        height: min(70svh, 640px);
+    }
+
+    .sectionContent {
+        align-items: flex-start;
 
         h1 {
-            font-size: 60px;
-            font-style: italic;
+            font-size: 3.4rem;
         }
-    }
 
-    .desktopView {
-        display: block;
-        width: 90%;
-        margin: 15px auto;
-    }
+        h3 {
+            text-align: left;
+            font-size: 2.4rem;
 
-    .mobileView {
-        display: none !important;
-    }
-
-    .recentPosts {
-        flex: 1;
-    }
-
-
-    .mainSection {
-        padding-right: 50px;
-
-        .section {
-
-            flex-direction: row;
-            justify-content: center;
-
-            .sectionContent {
-                margin-left: 20px;
+            &::after {
+                margin-left: 0;
             }
         }
     }
 
-    .bookIntro {
-        justify-content: left;
-        text-align: left;
-
-        .bookCover {
-            width: 20%;
-            align-self: start;
-        }
+    .newsletterCard {
+        text-align: center;
     }
-
-
 }
