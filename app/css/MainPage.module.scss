@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 24px;
+    padding: 14px 24px;
     box-sizing: border-box;
 }
 
@@ -43,8 +43,8 @@
 }
 
 .authorPhoto {
-    height: min(38vh, 400px);
-    height: min(38svh, 400px);
+    height: min(29vh, 400px);
+    height: min(29svh, 400px);
     width: auto;
     max-width: 100%;
     aspect-ratio: 4 / 5;
@@ -57,8 +57,8 @@
 }
 
 .bookCover {
-    height: min(38vh, 400px);
-    height: min(38svh, 400px);
+    height: min(29vh, 400px);
+    height: min(29svh, 400px);
     width: auto;
     max-width: 100%;
     object-fit: contain;
@@ -83,8 +83,7 @@
 }
 
 .text {
-    margin: 8px 0;
-    font-size: 1.1rem;
+    margin: 10px 0;
 }
 
 .readMoreBtn {
