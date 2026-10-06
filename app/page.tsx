@@ -18,10 +18,12 @@ export default function Home() {
             priority
           />
           <div className={classes.sectionContent}>
-            <h1>Hi, I'm Nicole!</h1>
-            <div className={classes.text}>I write delicious slow burn romantasy with redeemable villains and plot-lines that will heal your inner child.</div>
-            <div className={classes.text}>I also daylight as a software developer.</div>
-            <Link href='/about' className={classes.readMoreBtn}>Learn more about me</Link>
+            <h2>Dark romantic fantasy author</h2>
+            <h3>Nicole D. Hansen</h3>
+            
+            <div className={classes.text}>Nicole writes delicious slow burn romantasy with redeemable villains and plot-lines that will heal your inner child.</div>
+            <div className={classes.text}>She also daylights as a software developer.</div>
+            <Link href='/about' className={classes.readMoreBtn}>About Nicole</Link>
           </div>
         </div>
       </section>
