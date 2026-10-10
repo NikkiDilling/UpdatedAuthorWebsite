@@ -9,6 +9,7 @@ import tayremChained from '../../public/assets/Tayrem-chained.webp';
 import elayah from '../../public/assets/Elayah-final.webp';
 import elayahNrayn from '../../public/assets/Elayah&Rayn.webp';
 import alexCom from '../../public/assets/AlexCom.webp';
+import tayCard from '../../public/assets/TayremCard.webp';
 import invasionTnE from '../../public/assets/CommissionNicole.webp';
 import { Navigation, Autoplay} from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -31,6 +32,11 @@ export default function ArtPage() {
     }
 
     const itemData = [
+        {
+            img: tayCard,
+            title: 'Tayrem playing card',
+            author:  'Nicole D. Hansen'            
+        },
         {
             img: alexCom,
             title: 'Elayah & Tayrem',
