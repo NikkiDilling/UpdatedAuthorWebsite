@@ -173,7 +173,7 @@ export default function ProjectSunsetPage() {
               />
               <div>
                 <div>Book 1 status:</div>
-                <div>Done!</div>
+                <div>Published</div>
               </div>
 
             </div>
@@ -181,12 +181,12 @@ export default function ProjectSunsetPage() {
               <CircularProgress
                 enableTrackSlot
                 variant="determinate"
-                value={5}
+                value={10}
                 aria-label="Export data"
               />
               <div>
                 <div>Book 2 status:</div>
-                <div>Plotting</div>
+                <div>Outline is done</div>
               </div>
 
             </div>
@@ -194,12 +194,12 @@ export default function ProjectSunsetPage() {
               <CircularProgress
                 enableTrackSlot
                 variant="determinate"
-                value={1}
+                value={2}
                 aria-label="Export data"
               />
               <div>
                 <div>Book 3 status:</div>
-                <div>Plotting</div>
+                <div>Outlining...</div>
               </div>
 
             </div>
