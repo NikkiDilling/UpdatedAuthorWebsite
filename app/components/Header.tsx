@@ -5,6 +5,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import classes from '../css/Header.module.scss';
 import Navigation from './Navigation';
 import Link from 'next/link';
+import Image from 'next/image';
+import logo from '../../public/assets/logo.webp';
 import { Box, List, ListItem, ListItemButton, ListItemIcon, SwipeableDrawer, ListItemText } from '@mui/material';
 import { useState, useRef } from 'react';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
@@ -97,7 +99,9 @@ export default function Header() {
 
       <div className={classes.containerHeader}>
         <div className={classes.title}>
-          <Link href="/">Nicole D. Hansen</Link >
+          <Link href="/" aria-label="Nicole D. Hansen, author - home">
+            <Image src={logo} alt="" className={classes.logo} priority />
+          </Link>
         </div>
 
         {/* Replace with burger menu on mobile! */}

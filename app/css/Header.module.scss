@@ -55,18 +55,16 @@
 }
 
 .title a {
-    display: inline-block;
-    color: #fbf6ff;
-    width: fit-content;
+    display: flex;
+    align-items: center;
+    height: 64px;
     margin-left: 22px;
-    font-size: 19px;
-    white-space: nowrap;
-    font-family: var(--font-display), serif;
-    letter-spacing: 0.03em;
-    background: linear-gradient(90deg, #fbf6ff 0%, #e8d29d 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+}
+
+.logo {
+    display: block;
+    height: 56px;
+    width: auto;
 }
 
 .navigation {
@@ -134,10 +132,6 @@
 
     .container {
         font-size: 28px;
-    }
-
-    .title a {
-        font-size: 22px;
     }
 
 
