@@ -181,7 +181,7 @@ export default function ProjectSunsetPage() {
               <CircularProgress
                 enableTrackSlot
                 variant="determinate"
-                value={10}
+                value={5}
                 aria-label="Export data"
               />
               <div>
