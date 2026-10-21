@@ -33,8 +33,8 @@ export default function Home() {
           <Image className={classes.bookCover} src={bookcover} alt='book cover' />
           <div className={classes.sectionContent}>
             <h3>Prisoner of Magnolia Series</h3>
-            <span className={classes.release}>Release Date: August 18th</span>
-            <div className={classes.text}>Prisoner of Magnolia the first book in Nicole D. Hansen's debut romantasy series, set in a dying elven world...</div>
+            <span className={classes.release}>Release Date: August 18th, 2026</span>
+            <div className={classes.text}>Prisoner of Magnolia is the first book in Nicole D. Hansen's debut romantasy series, set in a dying elven world...</div>
             <Link href='/books' className={classes.readMoreBtn}>Read more</Link>
           </div>
         </div>

@@ -95,7 +95,7 @@ export default function ArtPage() {
             <div className={classes.description}>
                 I love art, and support REAL human artists!
                 <div>
-                    Below are some pieces commissioned from amazing artists,
+                    Below are pieces commissioned from amazing artists,
                     as well as some of my own amateur artwork.
                 </div>
 
