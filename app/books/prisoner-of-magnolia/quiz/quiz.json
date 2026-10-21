@@ -3,10 +3,37 @@
     {
       "text": "It's a quiet evening in Gaudelir. What are you doing?",
       "answers": [
-        { "text": "Reading in the archive", "points": { "elayah": 2, "xyna": 1 } },
+        { "text": "Reading elven history books & daydreaming", "points": { "elayah": 2, "xyna": 1 } },
+        { "text": "Sparring on the beach", "points": { "tayrem": 2, "rayn": 1 } },
+        { "text": "Holding court, plotting your next move", "points": { "rayn": 2, "elayah": 1 } },
+        { "text": "Drinking in the company of fun strangers", "points": { "xyna": 2, "rayn": 1 } }
+      ]
+    }, 
+    {
+      "text": "You are offered a glass of nectar. What are you doing?",
+      "answers": [
+        { "text": "Maybe just one glass...", "points": { "elayah": 2, "xyna": 1 } },
+        { "text": "No thanks. I don't drink.", "points": { "tayrem": 2, "rayn": 1 } },
+        { "text": "Give me something stronger.", "points": { "rayn": 2, "xyna": 1 } },
+        { "text": "Yes.", "points": { "xyna": 2, "elayah": 1 } }
+      ]
+    },
+    {
+      "text": "It's a quiet evening in Gaudelir. What are you doing?",
+      "answers": [
+        { "text": "Reading elven history books & daydreaming", "points": { "elayah": 2, "xyna": 1 } },
         { "text": "Sparring in the courtyard", "points": { "tayrem": 2, "rayn": 1 } },
         { "text": "Holding court, plotting your next move", "points": { "rayn": 2, "xyna": 1 } },
-        { "text": "Slipping out unnoticed to see where the night leads", "points": { "xyna": 2, "elayah": 1 } }
+        { "text": "Drinking in the company of fun strangers", "points": { "xyna": 2, "rayn": 1 } }
+      ]
+    },
+    {
+      "text": "What is your greatest strength?",
+      "answers": [
+        { "text": "Kindness", "points": { "elayah": 2, "xyna": 1 } },
+        { "text": "Loyalty", "points": { "tayrem": 2, "elayah": 1 } },
+        { "text": "Determination", "points": { "rayn": 2, "tayrem": 1 } },
+        { "text": "Insight", "points": { "xyna": 2, "rayn": 1 } }
       ]
     }
   ],
