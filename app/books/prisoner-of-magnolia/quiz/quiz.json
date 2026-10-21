@@ -19,12 +19,21 @@
       ]
     },
     {
-      "text": "It's a quiet evening in Gaudelir. What are you doing?",
+      "text": "Pick an animal",
       "answers": [
-        { "text": "Reading elven history books & daydreaming", "points": { "elayah": 2, "xyna": 1 } },
-        { "text": "Sparring in the courtyard", "points": { "tayrem": 2, "rayn": 1 } },
-        { "text": "Holding court, plotting your next move", "points": { "rayn": 2, "xyna": 1 } },
-        { "text": "Drinking in the company of fun strangers", "points": { "xyna": 2, "rayn": 1 } }
+        { "text": "Fox", "points": { "elayah": 2, "rayn": 1 } },
+        { "text": "Hawk", "points": { "tayrem": 2, "elayah": 1 } },
+        { "text": "Snake", "points": { "rayn": 2, "elayah": 1 } },
+        { "text": "Lynx", "points": { "xyna": 2, "rayn": 1 } }
+      ]
+    },
+        {
+      "text": "What's your favorite color?",
+      "answers": [
+        { "text": "Yellow", "points": { "elayah": 2, "rayn": 1 } },
+        { "text": "Green", "points": { "tayrem": 2, "elayah": 1 } },
+        { "text": "Navy blue", "points": { "rayn": 2, "elayah": 1 } },
+        { "text": "Red", "points": { "xyna": 2, "rayn": 1 } }
       ]
     },
     {
@@ -38,9 +47,9 @@
     }
   ],
   "results": {
-    "elayah": { "name": "Elayah", "blurb": "Placeholder: write Elayah's result text here." },
-    "rayn": { "name": "Rayn", "blurb": "Placeholder: write Rayn's result text here." },
-    "tayrem": { "name": "Tayrem", "blurb": "Placeholder: write Tayrem's result text here." },
+    "elayah": { "name": "Elayah Lorethain", "blurb": "You strength lies in your softness and how much you care for other people. Don't let others underestimate you, for when someone messes with your loved ones they are playing a dangerous game." },
+    "rayn": { "name": "Rayn Varcas", "blurb": "You are a soft soul with a thick shell. To many you might seem heartless, but you will fight ferously for those who saw past your walls and have won your trust." },
+    "tayrem": { "name": "Tayrem Sáremson", "blurb": "Placeholder: write Tayrem's result text here." },
     "xyna": { "name": "Xyna", "blurb": "Placeholder: write Xyna's result text here." }
   }
 }
