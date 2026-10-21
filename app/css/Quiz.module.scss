@@ -1,0 +1,107 @@
+.quiz {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.eyebrow {
+    margin: 0 0 12px;
+    font-family: var(--font-body), serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+}
+
+.progress {
+    height: 4px;
+    margin: 0 auto 28px;
+    max-width: 240px;
+    border-radius: 999px;
+    background: rgba(203, 161, 77, 0.25);
+    overflow: hidden;
+}
+
+.progressBar {
+    height: 100%;
+    background: var(--gold);
+    transition: width 0.4s var(--ease);
+}
+
+.question,
+.heading {
+    margin: 0 0 28px;
+    font-size: 2rem;
+    font-style: italic;
+    color: var(--brand-deep);
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.answer {
+    width: 100%;
+    padding: 18px 22px;
+    background: var(--surface);
+    border: 1px solid rgba(203, 161, 77, 0.3);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-soft);
+    color: var(--text);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: border-color 0.3s var(--ease), transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+
+    &:hover {
+        border-color: var(--gold);
+        transform: translateY(-3px);
+        box-shadow: 0 14px 30px rgba(74, 47, 122, 0.18);
+    }
+}
+
+.blurb {
+    margin: 0 auto 32px;
+    max-width: 520px;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.button {
+    padding: 12px 26px;
+    background: var(--brand);
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    font: inherit;
+    cursor: pointer;
+    transition: background 0.3s var(--ease), transform 0.3s var(--ease);
+
+    &:hover {
+        background: var(--brand-deep);
+        transform: translateY(-2px);
+    }
+}
+
+.linkBack {
+    color: var(--text-muted);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+
+    &:hover {
+        color: var(--rose);
+    }
+}

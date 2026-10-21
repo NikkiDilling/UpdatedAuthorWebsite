@@ -1,0 +1,19 @@
+{
+  "questions": [
+    {
+      "text": "It's a quiet evening in Gaudelir. What are you doing?",
+      "answers": [
+        { "text": "Reading in the archive", "points": { "elayah": 2, "xyna": 1 } },
+        { "text": "Sparring in the courtyard", "points": { "tayrem": 2, "rayn": 1 } },
+        { "text": "Holding court, plotting your next move", "points": { "rayn": 2, "xyna": 1 } },
+        { "text": "Slipping out unnoticed to see where the night leads", "points": { "xyna": 2, "elayah": 1 } }
+      ]
+    }
+  ],
+  "results": {
+    "elayah": { "name": "Elayah", "blurb": "Placeholder: write Elayah's result text here." },
+    "rayn": { "name": "Rayn", "blurb": "Placeholder: write Rayn's result text here." },
+    "tayrem": { "name": "Tayrem", "blurb": "Placeholder: write Tayrem's result text here." },
+    "xyna": { "name": "Xyna", "blurb": "Placeholder: write Xyna's result text here." }
+  }
+}
