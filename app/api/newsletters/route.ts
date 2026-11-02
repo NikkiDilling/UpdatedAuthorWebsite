@@ -4,14 +4,19 @@ import type { ICampaign } from '../../lib/newsletter';
 
 // Checked on the server so the word never ships in the page's JavaScript and the
 // newsletters are only fetched for someone who knows it. Override with NEWSLETTER_SECRET_WORD.
-const SECRET_WORD = (process.env.NEWSLETTER_SECRET_WORD ?? 'melon').trim().toLowerCase();
+const SECRET_WORD = (process.env.NEWSLETTER_SECRET_WORD?.trim() || 'melon').toLowerCase();
 const MAX_PAGES = 10;
 
 async function fetchSentCampaigns(): Promise<ICampaign[]> {
+    const token = process.env.NEXT_PUBLIC_NewsletterToken;
+    if (!token) {
+        throw new Error('NEXT_PUBLIC_NewsletterToken is not set. Add it to .env.local (see .env.example) and restart the dev server.');
+    }
+
     const headers = {
         'Content-Type': 'application/json',
         Accept: 'application/json',
-        Authorization: 'Bearer ' + process.env.NEXT_PUBLIC_NewsletterToken,
+        Authorization: 'Bearer ' + token,
     };
 
     const campaigns: ICampaign[] = [];
