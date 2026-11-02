@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import classes from '../../../css/Quiz.module.scss';
 import quizData from './quiz.json';
 
@@ -16,7 +17,8 @@ interface Answer {
 interface Quiz {
     questions: { text: string; answers: Answer[] }[];
     // Keys here define which characters exist; their order is the tie-break order.
-    results: Record<string, { name: string; blurb: string }>;
+    // art is optional: a path under /public, e.g. "/assets/Elayah-final.webp". Shown with faded edges.
+    results: Record<string, { name: string; blurb: string; art?: string }>;
 }
 
 const quiz = quizData as Quiz;
@@ -60,6 +62,16 @@ export default function QuizPage() {
         return (
             <div className={classes.quiz}>
                 <p className={classes.eyebrow}>Your result</p>
+                {result.art && (
+                    <Image
+                        src={result.art}
+                        alt={result.name}
+                        width={800}
+                        height={800}
+                        sizes="(max-width: 640px) 100vw, 520px"
+                        className={classes.art}
+                    />
+                )}
                 <h1 className={classes.heading}>You are {result.name}!</h1>
                 <p className={classes.blurb}>{result.blurb}</p>
                 <div className={classes.actions}>

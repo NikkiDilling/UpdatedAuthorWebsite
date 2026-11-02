@@ -66,6 +66,27 @@
     }
 }
 
+// Fades the image's edges into the page background while the middle stays sharp.
+// Two linear masks (horizontal x vertical) are intersected, so corners fade the most.
+$fade: 56px;
+
+.art {
+    display: block;
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    margin: 0 auto 8px;
+    pointer-events: none;
+    -webkit-mask-image:
+        linear-gradient(to right, transparent, #000 $fade, #000 calc(100% - #{$fade}), transparent),
+        linear-gradient(to bottom, transparent, #000 $fade, #000 calc(100% - #{$fade}), transparent);
+    -webkit-mask-composite: source-in;
+    mask-image:
+        linear-gradient(to right, transparent, #000 $fade, #000 calc(100% - #{$fade}), transparent),
+        linear-gradient(to bottom, transparent, #000 $fade, #000 calc(100% - #{$fade}), transparent);
+    mask-composite: intersect;
+}
+
 .blurb {
     margin: 0 auto 32px;
     max-width: 520px;
