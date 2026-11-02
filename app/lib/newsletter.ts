@@ -1,6 +1,8 @@
 export interface ICampaignEmail {
+    subject: string;
     preview_url: string;
     plain_text: string;
+    preheader: string;
 }
 
 export interface ICampaign {
