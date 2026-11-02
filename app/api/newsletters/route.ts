@@ -1,41 +1,43 @@
 import { NextResponse } from 'next/server';
+import axios from 'axios';
 import settings from '../../settings.json';
 import type { ICampaign } from '../../lib/newsletter';
 
 // Checked on the server so the word never ships in the page's JavaScript and the
 // newsletters are only fetched for someone who knows it. Override with NEWSLETTER_SECRET_WORD.
 const SECRET_WORD = (process.env.NEWSLETTER_SECRET_WORD?.trim() || 'melon').toLowerCase();
-const MAX_PAGES = 10;
 
-async function fetchSentCampaigns(): Promise<ICampaign[]> {
+// MailerLite's campaigns endpoint has no group query param. The group a campaign was
+// sent to lives in its `filter` field, e.g. [[{ operator: 'in_any', args: ['groups', ['42']] }]].
+const isSentToGroup = (campaign: ICampaign, groupId: string): boolean =>
+    (campaign.filter ?? [])
+        .flat()
+        .some((condition) =>
+            condition.args?.[0] === 'groups' &&
+            Array.isArray(condition.args[1]) &&
+            condition.args[1].map(String).includes(groupId));
+
+async function fetchCampaigns(): Promise<ICampaign[]> {
     const token = process.env.NEXT_PUBLIC_NewsletterToken;
+    const groupId = process.env.NEXT_PUBLIC_GroupId;
     if (!token) {
         throw new Error('NEXT_PUBLIC_NewsletterToken is not set. Add it to .env.local (see .env.example) and restart the dev server.');
     }
-
-    const headers = {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-        Authorization: 'Bearer ' + token,
-    };
-
-    const campaigns: ICampaign[] = [];
-    let url: string | null = `${settings.baseUrl}/campaigns`;
-
-    for (let page = 0; url && page < MAX_PAGES; page++) {
-        const res: Response = await fetch(url, { headers, cache: 'no-store' });
-        if (!res.ok) throw new Error(`MailerLite responded ${res.status}`);
-
-        const body = await res.json();
-        campaigns.push(...((body.data ?? []) as ICampaign[]));
-
-        // Follow pagination, but never send the token anywhere other than MailerLite.
-        const next: unknown = body.links?.next;
-        url = typeof next === 'string' && next.startsWith(settings.baseUrl) ? next : null;
+    if (!groupId) {
+        throw new Error('NEXT_PUBLIC_GroupId is not set. Add it to .env.local (see .env.example) and restart the dev server.');
     }
 
-    return campaigns
-        .filter((campaign) => campaign.status === 'sent')
+    const res = await axios.get<{ data?: ICampaign[] }>(`${settings.baseUrl}/campaigns`, {
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+            'Authorization': 'Bearer ' + token,
+        },
+        params: { 'filter[status]': 'sent' },
+    });
+
+    return (res.data.data ?? [])
+        .filter((campaign) => isSentToGroup(campaign, groupId))
         .sort((a, b) => (b.started_at ?? '').localeCompare(a.started_at ?? ''));
 }
 
@@ -52,9 +54,12 @@ export async function POST(request: Request) {
     }
 
     try {
-        return NextResponse.json({ campaigns: await fetchSentCampaigns() });
+        return NextResponse.json({ campaigns: await fetchCampaigns() });
     } catch (error) {
-        console.error('Could not load newsletters:', error);
+        // Log the status/message only: a full AxiosError includes the request headers, i.e. the API token.
+        console.error('Could not load newsletters:', axios.isAxiosError(error)
+            ? `${error.response?.status ?? error.code} ${error.message}`
+            : error);
         return NextResponse.json({ error: 'unavailable' }, { status: 502 });
     }
 }
