@@ -73,17 +73,15 @@ $fade: 56px;
 .art {
     display: block;
     width: 100%;
-    max-width: 520px;
+    max-width: 220px;
     height: auto;
     margin: 0 auto 8px;
     pointer-events: none;
-    -webkit-mask-image:
-        linear-gradient(to right, transparent, #000 $fade, #000 calc(100% - #{$fade}), transparent),
-        linear-gradient(to bottom, transparent, #000 $fade, #000 calc(100% - #{$fade}), transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 $fade, #000 calc(100% - #{$fade}), transparent),
+    linear-gradient(to bottom, transparent, #000 $fade, #000 calc(100% - #{$fade}), transparent);
     -webkit-mask-composite: source-in;
-    mask-image:
-        linear-gradient(to right, transparent, #000 $fade, #000 calc(100% - #{$fade}), transparent),
-        linear-gradient(to bottom, transparent, #000 $fade, #000 calc(100% - #{$fade}), transparent);
+    mask-image: linear-gradient(to right, transparent, #000 $fade, #000 calc(100% - #{$fade}), transparent),
+    linear-gradient(to bottom, transparent, #000 $fade, #000 calc(100% - #{$fade}), transparent);
     mask-composite: intersect;
 }
 
@@ -124,5 +122,13 @@ $fade: 56px;
 
     &:hover {
         color: var(--rose);
+    }
+}
+
+@media (min-width: 1600px) {
+
+    .art {
+        max-width: 420px;
+
     }
 }
