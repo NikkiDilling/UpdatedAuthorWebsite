@@ -10,6 +10,7 @@ import logo from '../../public/assets/logo.webp';
 import { Box, List, ListItem, ListItemButton, ListItemIcon, SwipeableDrawer, ListItemText } from '@mui/material';
 import { useState, useRef } from 'react';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
+import MailIcon from '@mui/icons-material/Mail';
 import ColorLensIcon from '@mui/icons-material/ColorLens';
 import Face3Icon from '@mui/icons-material/Face3';
 import CallIcon from '@mui/icons-material/Call';
@@ -39,8 +40,8 @@ export default function Header() {
     switch (srch) {
       case 'books':
         return <MenuBookIcon />;
-      /*       case 'Blog':
-              return <MailIcon />; */
+      case 'blog':
+        return <MailIcon />;
       case 'art':
         return <ColorLensIcon />;
       case 'about':
@@ -60,7 +61,7 @@ export default function Header() {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        {['Books', 'Art', 'About', 'Contact'].map((text) => (
+        {['Books', 'Blog', 'Art', 'About', 'Contact'].map((text) => (
           <Link href={`/${text.toLowerCase()}`}
             key={text} className={classes.listItem}>
             <ListItem disablePadding >

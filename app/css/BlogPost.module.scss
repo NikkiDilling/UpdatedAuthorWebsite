@@ -1,30 +1,34 @@
+// No fixed height: the card grows with its content, so cards never overlap.
 .containerPreview {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 24px 20px;
+    background: var(--surface);
     border: 1px solid rgba(203, 161, 77, 0.4);
     border-radius: 24px;
-    background: var(--surface);
     box-shadow: var(--shadow-soft);
-    width: 350px;
-    max-height: 150px;
-    padding: 14px;
     text-align: center;
-    margin: 10px 15px;
+    overflow-wrap: anywhere;
+}
 
-    .title {
-        font-weight: 700;
-        font-family: var(--font-display), serif;
-        color: var(--brand-deep);
-    }
+.title {
+    font-weight: 700;
+    font-family: var(--font-display), serif;
+    font-size: 1.3rem;
+    color: var(--brand-deep);
+}
+
+.date {
+    color: var(--text-muted);
 }
 
 .btn {
-    margin: auto;
-    margin-top: 15px;
-    width: 60%;
-    padding: 6px 12px;
+    margin-top: auto;
+    padding: 8px 22px;
     background: var(--brand);
-    color: #ffff;
+    color: #fff;
     border-radius: 999px;
     cursor: pointer;
     text-decoration: none;

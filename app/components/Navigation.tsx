@@ -6,7 +6,7 @@ export default function Navigation() {
     return (
         <div className={classes.container}>
             <Link href="/books">Books</Link >
-  {/*           <Link href="/Blog" >Blog</Link > */}
+            <Link href="/blog">Blog</Link >
             <Link href="/art">Art</Link >
             <Link href="/about">About</Link >
             <Link href="/contact">Contact</Link >

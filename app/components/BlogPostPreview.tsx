@@ -1,16 +1,23 @@
-import  Link from "next/link";
+import Link from "next/link";
 import classes from "../css/BlogPost.module.scss";
-import type { ICampaign } from "../temp/Blog/page";
+import type { ICampaign } from "../lib/newsletter";
 
 export default function BlogPostPreview(props: { campaign: ICampaign }) {
+    const { campaign } = props;
+    const previewUrl = campaign.emails?.[0]?.preview_url;
+    const date = new Date(campaign.started_at.replace(' ', 'T')).toLocaleDateString(undefined, {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+    });
 
     return (
-
         <div className={classes.containerPreview}>
-            <div key={props.campaign.id} className={classes.title}>{props.campaign.name}</div>
-            <div>{new Date(props.campaign.started_at).toLocaleDateString()}</div>
-            <Link className={classes.btn} href={props.campaign.emails[0].preview_url} target="_blank" rel="noopener noreferrer">Read post</Link>
+            <div className={classes.title}>{campaign.name}</div>
+            <div className={classes.date}>{date}</div>
+            {previewUrl && (
+                <Link className={classes.btn} href={previewUrl} target="_blank" rel="noopener noreferrer">Read post</Link>
+            )}
         </div>
-
     );
 }
