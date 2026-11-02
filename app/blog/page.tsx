@@ -27,6 +27,7 @@ export default function BlogPage() {
         body: JSON.stringify({ word: attempt }),
       });
 
+     
       if (res.status === 401) {
         sessionStorage.removeItem(STORAGE_KEY);
         setMessage("That's not the secret word. Try again!");
@@ -36,6 +37,7 @@ export default function BlogPage() {
       if (!res.ok) throw new Error(`Request failed: ${res.status}`);
 
       const data = await res.json();
+      debugger;
       sessionStorage.setItem(STORAGE_KEY, attempt);
       setCampaigns(data.campaigns ?? []);
       setStatus('open');
@@ -105,11 +107,12 @@ export default function BlogPage() {
           <div className={classes.noPosts}>There are no posts yet. Come back later</div>
         )
       )}
-
+{/* 
       <div className={classes.signup}>
-        <h3>Sign up for the newsletter</h3>
+        <h3>Sign up for the newsletter and...</h3>
+        <p>Get the secret word 😉</p>
         <NewsletterForm />
-      </div>
+      </div> */}
     </div>
   );
 }

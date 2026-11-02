@@ -18,14 +18,32 @@
     font-family: var(--font-display), serif;
     font-size: 1.3rem;
     color: var(--brand-deep);
+    text-align: justify;
+}
+
+.subtitle {
+    margin-top: 20px;
+    text-align: justify;
+    font-weight: 500;
+    font-size: 1.2rem;
+    font-style: italic;
 }
 
 .date {
     color: var(--text-muted);
 }
 
-.btn {
+// margin-top: auto pushes the footer to the bottom of the card, even when the cards in a row
+// are stretched taller by a neighbour with a longer title.
+.footer {
     margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
     padding: 8px 22px;
     background: var(--brand);
     color: #fff;

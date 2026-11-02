@@ -5,26 +5,34 @@ import type { ICampaign } from '../../lib/newsletter';
 
 // Checked on the server so the word never ships in the page's JavaScript and the
 // newsletters are only fetched for someone who knows it. Override with NEWSLETTER_SECRET_WORD.
-const SECRET_WORD = (process.env.NEWSLETTER_SECRET_WORD?.trim() || 'melon').toLowerCase();
+const SECRET_WORD = (process.env.NEWSLETTER_SECRET_WORD?.trim() || 'imtheelementalmaster').toLowerCase();
 
-// MailerLite's campaigns endpoint has no group query param. The group a campaign was
-// sent to lives in its `filter` field, e.g. [[{ operator: 'in_any', args: ['groups', ['42']] }]].
-const isSentToGroup = (campaign: ICampaign, groupId: string): boolean =>
-    (campaign.filter ?? [])
-        .flat()
-        .some((condition) =>
-            condition.args?.[0] === 'groups' &&
-            Array.isArray(condition.args[1]) &&
-            condition.args[1].map(String).includes(groupId));
+// MailerLite's campaigns endpoint has no group query param. The groups a campaign was sent to
+// are in `filter_for_humans`, e.g. [["In any group: Newsletter"]] or [["In any group: ARCs, ARC 2"]].
+const GROUP_PREFIX = 'In any group: ';
+
+const isSentToGroup = (campaign: ICampaign, groupName: string): boolean => {
+    const conditions = (campaign.filter_for_humans ?? []).flat();
+
+    return conditions.some((condition) => {
+        if (!condition.startsWith(GROUP_PREFIX)) {
+            return false;
+        }
+
+        const groupNames = condition.slice(GROUP_PREFIX.length).split(',').map((name) => {
+            return name.trim();
+        });
+
+        return groupNames.includes(groupName);
+    });
+};
+
 
 async function fetchCampaigns(): Promise<ICampaign[]> {
     const token = process.env.NEXT_PUBLIC_NewsletterToken;
-    const groupId = process.env.NEXT_PUBLIC_GroupId;
+
     if (!token) {
         throw new Error('NEXT_PUBLIC_NewsletterToken is not set. Add it to .env.local (see .env.example) and restart the dev server.');
-    }
-    if (!groupId) {
-        throw new Error('NEXT_PUBLIC_GroupId is not set. Add it to .env.local (see .env.example) and restart the dev server.');
     }
 
     const res = await axios.get<{ data?: ICampaign[] }>(`${settings.baseUrl}/campaigns`, {
@@ -36,9 +44,16 @@ async function fetchCampaigns(): Promise<ICampaign[]> {
         params: { 'filter[status]': 'sent' },
     });
 
-    return (res.data.data ?? [])
-        .filter((campaign) => isSentToGroup(campaign, groupId))
-        .sort((a, b) => (b.started_at ?? '').localeCompare(a.started_at ?? ''));
+
+    const data = (res.data.data ?? [])
+        .filter((campaign) => {
+            return isSentToGroup(campaign, 'Newsletter');
+        })
+        .sort((a, b) => {
+            return (b.started_at ?? '').localeCompare(a.started_at ?? '');
+        });
+
+    return data;
 }
 
 export async function POST(request: Request) {

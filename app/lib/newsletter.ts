@@ -3,11 +3,6 @@ export interface ICampaignEmail {
     plain_text: string;
 }
 
-export interface ICampaignFilterCondition {
-    operator: string;
-    args: unknown[];
-}
-
 export interface ICampaign {
     id: string;
     name: string;
@@ -16,6 +11,6 @@ export interface ICampaign {
     scheduled_for: string;
     started_at: string;
     emails: ICampaignEmail[];
-    // Who the campaign was sent to; group targets look like args: ['groups', ['<group id>']].
-    filter?: ICampaignFilterCondition[][];
+    // Who the campaign was sent to, e.g. [["In any group: Newsletter"]].
+    filter_for_humans?: string[][];
 }
