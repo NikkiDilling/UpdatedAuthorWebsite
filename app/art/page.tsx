@@ -101,7 +101,7 @@ export default function ArtPage() {
 
 
             </div>
-            <Divider />
+      
 
             <Swiper
                 modules={[Navigation,Autoplay]}
