@@ -11,6 +11,7 @@ import elayahNrayn from '../../public/assets/Elayah&Rayn.webp';
 import alexCom from '../../public/assets/AlexCom.webp';
 import tayCard from '../../public/assets/TayremCard.webp';
 import invasionTnE from '../../public/assets/CommissionNicole.webp';
+import xyna from '../../public/assests/XynaCommision.webp';
 import { Navigation, Autoplay} from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -32,6 +33,12 @@ export default function ArtPage() {
     }
 
     const itemData = [
+        {
+            img: xyna,
+            title: 'Xyna',
+            author: 'mbythestar',
+            ig: "https://www.instagram.com/mbythestar/"   
+        },
         {
             img: tayCard,
             title: 'Tayrem playing card',
