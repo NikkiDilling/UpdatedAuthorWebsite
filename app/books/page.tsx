@@ -186,7 +186,7 @@ export default function ProjectSunsetPage() {
               />
               <div>
                 <div>Book 2 status:</div>
-                <div>Outline is done</div>
+                <div>Writing draft 1</div>
               </div>
 
             </div>
